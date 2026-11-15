@@ -23,7 +23,7 @@ struct MergeEventsUseCase: Sendable {
             eventsByID[event.id] = event
         }
 
-        for event in incoming {
+        for event in incoming { // se ho già l'evento sovrascrive quello che ho già in pancia
             eventsByID[event.id] = event
         }
 

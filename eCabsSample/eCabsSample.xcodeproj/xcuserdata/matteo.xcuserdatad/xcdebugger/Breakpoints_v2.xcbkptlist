@@ -354,5 +354,143 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B446AF7A-1E1F-4A0F-A899-DE7C34DEEE2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "execute(existing:incoming:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B446AF7A-1E1F-4A0F-A899-DE7C34DEEE2B - 9add6295ab521938"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eCabsSample.MergeEventsUseCase.execute(existing: Swift.Array&lt;eCabsSample.GitHubEvent&gt;, incoming: Swift.Array&lt;eCabsSample.GitHubEvent&gt;) -&gt; Swift.Array&lt;eCabsSample.GitHubEvent&gt;"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+               <Location
+                  uuid = "B446AF7A-1E1F-4A0F-A899-DE7C34DEEE2B - 9add6295ab521938"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eCabsSample.MergeEventsUseCase.execute(existing: Swift.Array&lt;eCabsSample.GitHubEvent&gt;, incoming: Swift.Array&lt;eCabsSample.GitHubEvent&gt;) -&gt; Swift.Array&lt;eCabsSample.GitHubEvent&gt;"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "799767F6-5F7D-42E9-87E9-45ADD692946B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "execute(existing:incoming:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "799767F6-5F7D-42E9-87E9-45ADD692946B - 9add6295ab521e84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eCabsSample.MergeEventsUseCase.execute(existing: Swift.Array&lt;eCabsSample.GitHubEvent&gt;, incoming: Swift.Array&lt;eCabsSample.GitHubEvent&gt;) -&gt; Swift.Array&lt;eCabsSample.GitHubEvent&gt;"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "799767F6-5F7D-42E9-87E9-45ADD692946B - 9add6295ab521e84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eCabsSample.MergeEventsUseCase.execute(existing: Swift.Array&lt;eCabsSample.GitHubEvent&gt;, incoming: Swift.Array&lt;eCabsSample.GitHubEvent&gt;) -&gt; Swift.Array&lt;eCabsSample.GitHubEvent&gt;"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29089C43-3DC0-47A0-9009-EF497100D58F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "execute(existing:incoming:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29089C43-3DC0-47A0-9009-EF497100D58F - 9add6295ab5219bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eCabsSample.MergeEventsUseCase.execute(existing: Swift.Array&lt;eCabsSample.GitHubEvent&gt;, incoming: Swift.Array&lt;eCabsSample.GitHubEvent&gt;) -&gt; Swift.Array&lt;eCabsSample.GitHubEvent&gt;"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+               <Location
+                  uuid = "29089C43-3DC0-47A0-9009-EF497100D58F - f96eaf2199d8b284"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (eCabsSample.GitHubEvent, eCabsSample.GitHubEvent) -&gt; Swift.Bool in eCabsSample.MergeEventsUseCase.execute(existing: Swift.Array&lt;eCabsSample.GitHubEvent&gt;, incoming: Swift.Array&lt;eCabsSample.GitHubEvent&gt;) -&gt; Swift.Array&lt;eCabsSample.GitHubEvent&gt;"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Domain/UseCases/MergeEventsUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
