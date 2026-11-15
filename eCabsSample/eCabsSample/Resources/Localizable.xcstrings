@@ -7,13 +7,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "GitHub REST API Documentation"
+            "value" : "Go to GitHub REST API Documentation"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Documentazione GitHub REST API"
+            "value" : "Vai a Documentazione GitHub REST API"
           }
         }
       }
@@ -75,13 +75,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Push · Pull Request · Issues · Watch · Fork"
+            "value" : "Monitor 16 types of GitHub events, including commits, branch and tag creation and deletion, discussions, forks, wiki updates, issue and pull request activity, reviews, pushes, releases, and collaborator additions."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Push · Pull Request · Issues · Watch · Fork"
+            "value" : "Monitora 16 tipologie di eventi GitHub: commit, creazione ed eliminazione di branch e tag, discussioni, fork, aggiornamenti wiki, commenti e attività su issue e pull request, revisioni, push, release e aggiunta di collaboratori."
           }
         }
       }
