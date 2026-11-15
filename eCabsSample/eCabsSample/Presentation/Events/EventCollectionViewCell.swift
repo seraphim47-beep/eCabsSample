@@ -233,6 +233,28 @@ final class EventCollectionViewCell: UICollectionViewCell {
             return UIColor(red: 9/255, green: 105/255, blue: 218/255, alpha: 1)
         case "ForkEvent":
             return UIColor(red: 8/255, green: 145/255, blue: 178/255, alpha: 1)
+        case "CommitCommentEvent":
+            return UIColor(red: 219/255, green: 109/255, blue: 40/255, alpha: 1)
+        case "CreateEvent":
+            return UIColor(red: 46/255, green: 160/255, blue: 67/255, alpha: 1)
+        case "DeleteEvent":
+            return UIColor(red: 207/255, green: 34/255, blue: 46/255, alpha: 1)
+        case "DiscussionEvent":
+            return UIColor(red: 130/255, green: 80/255, blue: 223/255, alpha: 1)
+        case "GollumEvent":
+            return UIColor(red: 101/255, green: 109/255, blue: 118/255, alpha: 1)
+        case "IssueCommentEvent":
+            return UIColor(red: 191/255, green: 135/255, blue: 0/255, alpha: 1)
+        case "MemberEvent":
+            return UIColor(red: 9/255, green: 105/255, blue: 218/255, alpha: 1)
+        case "PublicEvent":
+            return UIColor(red: 31/255, green: 136/255, blue: 61/255, alpha: 1)
+        case "PullRequestReviewEvent":
+            return UIColor(red: 130/255, green: 80/255, blue: 223/255, alpha: 1)
+        case "PullRequestReviewCommentEvent":
+            return UIColor(red: 111/255, green: 66/255, blue: 193/255, alpha: 1)
+        case "ReleaseEvent":
+            return UIColor(red: 191/255, green: 135/255, blue: 0/255, alpha: 1)
         default:
             return .secondaryLabel
         }
