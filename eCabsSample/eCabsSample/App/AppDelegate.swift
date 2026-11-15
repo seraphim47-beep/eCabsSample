@@ -3,14 +3,13 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
+//  Gestisce l'avvio dell'applicazione e la configurazione delle scene.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

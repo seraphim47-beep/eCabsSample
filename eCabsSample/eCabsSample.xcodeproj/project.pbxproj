@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		95F44F6D30A707E200AA6931 /* Exceptions for "eCabsSample" folder in "eCabsSample" target */ = {
+		95F44FF130A75CD200AA6931 /* Exceptions for "eCabsSample" folder in "eCabsSample" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +43,7 @@
 		95F44F4730A707DF00AA6931 /* eCabsSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				95F44F6D30A707E200AA6931 /* Exceptions for "eCabsSample" folder in "eCabsSample" target */,
+				95F44FF130A75CD200AA6931 /* Exceptions for "eCabsSample" folder in "eCabsSample" target */,
 			);
 			path = eCabsSample;
 			sourceTree = "<group>";
@@ -289,9 +289,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7VA6Z92DS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = eCabsSample/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = eCabsSample;
+				INFOPLIST_KEY_CFBundleDisplayName = "GitHub Events";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,9 +322,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E7VA6Z92DS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = eCabsSample/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = eCabsSample;
+				INFOPLIST_KEY_CFBundleDisplayName = "GitHub Events";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
