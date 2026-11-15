@@ -108,6 +108,7 @@ final class EventCollectionViewCell: UICollectionViewCell {
         let color = eventColor(for: event.type)
 
         eventTypeLabel.textColor = color
+        configureBorder(with: color)
     }
     
     func configureAvatar(with url: URL?, loader: AvatarLoader) {
@@ -258,5 +259,12 @@ final class EventCollectionViewCell: UICollectionViewCell {
         default:
             return .secondaryLabel
         }
+    }
+    
+    private func configureBorder(with color: UIColor) {
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = color.withAlphaComponent(0.45).cgColor
+        contentView.layer.cornerRadius = 12
+        contentView.layer.masksToBounds = true
     }
 }
