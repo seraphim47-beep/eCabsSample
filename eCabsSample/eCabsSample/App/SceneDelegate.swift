@@ -3,10 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
-//  Gestisce la finestra principale e avvia il Coordinator.
-//
 
-import UIKit
+//  **IT:** Gestisce la finestra principale e avvia il Coordinator.
+
+//  **EN:** Manages the main window and initializes the Coordinator.
 
 import UIKit
 

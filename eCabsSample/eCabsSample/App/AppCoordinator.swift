@@ -3,9 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
-//  Gestisce la navigazione tra lista e dettaglio.
-//
 
+//  **IT:** Gestisce la navigazione tra lista e dettaglio.
+
+//  **EN:** Handles navigation between the list and detail views.
 
 import UIKit
 
@@ -13,39 +14,48 @@ import UIKit
 final class AppCoordinator {
 
     private let window: UIWindow
-    private let navigationController: UINavigationController
+    private var navigationController: UINavigationController?
 
     init(window: UIWindow) {
         self.window = window
-        self.navigationController = UINavigationController()
     }
 
     func start() {
-        let viewModel = EventsViewModel()
+        let apiClient = GitHubAPIClient()
+        let mergeEventsUseCase = MergeEventsUseCase()
 
-        let viewController = EventsViewController(viewModel: viewModel, onSelectEvent: { [weak self] event in
-                self?.showEventDetail(for: event)
+        let repository = EventsRepository(
+            apiClient: apiClient,
+            mergeEventsUseCase: mergeEventsUseCase
+        )
+
+        let viewModel = EventsViewModel(repository: repository)
+
+        let viewController = EventsViewController(
+            viewModel: viewModel,
+            onSelectEvent: { [weak self] event in
+                self?.showEventDetail(event)
+            },
+            onShowAbout: { [weak self] in
+                self?.showAbout()
             }
         )
 
-        navigationController.setViewControllers(
-            [viewController],
-            animated: false
-        )
+        let navigationController = UINavigationController(rootViewController: viewController)
+        self.navigationController = navigationController
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
 
-    private func showEventDetail(for event: GitHubEvent) {
-        let viewModel = EventDetailViewModel(event: event)
-        let viewController = EventDetailViewController(
-            viewModel: viewModel
-        )
+    // MARK: - Navigation
 
-        navigationController.pushViewController(
-            viewController,
-            animated: true
-        )
+    private func showAbout() {
+        let aboutViewController = AboutViewController()
+        navigationController?.pushViewController(aboutViewController, animated: true)
+    }
+
+    private func showEventDetail(_ event: GitHubEvent) {
+        // TODO: Implementare la navigazione al dettaglio dell'evento.
     }
 }

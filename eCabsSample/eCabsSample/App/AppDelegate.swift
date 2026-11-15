@@ -3,8 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
-//  Gestisce l'avvio dell'applicazione e la configurazione delle scene.
-//
+
+//  **IT:** Gestisce l'avvio dell'applicazione e la configurazione delle scene.
+
+//  **EN:** Manages application launch and scene configuration.
 
 import UIKit
 
