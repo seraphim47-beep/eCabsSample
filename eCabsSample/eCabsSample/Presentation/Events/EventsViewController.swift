@@ -365,6 +365,8 @@ extension EventsViewController: UICollectionViewDelegateFlowLayout {
         )
 
         footerAttributionLabel.text = String(localized: "events.footer.attribution")
+        
+        footerView.addBorderTop(size: 1, color: .separator, opacity: 0.5, margin: 0)
     }
     
     private func updateFilterSegmentedControl() {
