@@ -139,27 +139,19 @@ final class EventsViewController: UIViewController {
         retryButton.setTitle(String(localized: "events.retry"), for: .normal)
         retryButton.addTarget(self, action: #selector(retryLoading), for: .touchUpInside)
         retryButton.isHidden = true
+        messageContainerView.backgroundColor = .launchScreen
+        messageContainerView.layer.cornerRadius = 16
+        messageContainerView.layer.masksToBounds = true
     }
 
     private func setupFilterSegmentedControl() {
-        let titles = [
-            String(localized: "events.filter.all"),
-            String(localized: "events.filter.push"),
-            String(localized: "events.filter.pull_request"),
-            String(localized: "events.filter.issues"),
-            String(localized: "events.filter.watch"),
-            String(localized: "events.filter.fork")
-        ]
+        filterSegmentedControl.addTarget(
+            self,
+            action: #selector(filterChanged),
+            for: .valueChanged
+        )
 
-        filterSegmentedControl.removeAllSegments()
-
-        for (index, title) in titles.enumerated() {
-            filterSegmentedControl.insertSegment(withTitle: title, at: index, animated: false)
-        }
-
-        filterSegmentedControl.selectedSegmentIndex = 0
-
-        filterSegmentedControl.addTarget(self, action: #selector(filterChanged), for: .valueChanged)
+        updateFilterSegmentedControl()
     }
 
     private func setupCollectionView() {
