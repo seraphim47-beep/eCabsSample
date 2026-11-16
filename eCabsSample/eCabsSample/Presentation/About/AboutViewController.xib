@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="eCabsSample" customModuleProvider="target">
             <connections>
                 <outlet property="apiButton" destination="LzL-YE-hUX" id="6Np-bI-UOO"/>
+                <outlet property="contentStackView" destination="BW4-eK-ql5" id="X9N-6f-LoF"/>
                 <outlet property="descriptionLabel" destination="Z4O-PM-7hP" id="JmD-I9-3jh"/>
                 <outlet property="footerLabel" destination="QSu-Ce-n6M" id="jKS-oQ-xEd"/>
                 <outlet property="gitHubLogo" destination="4E2-bk-Qrf" id="4Rg-2w-NT6"/>
@@ -28,16 +29,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slj-gL-hqa">
-                    <rect key="frame" x="0.0" y="118" width="99" height="666"/>
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPC-hs-Lwd" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="0.0" width="99" height="355.33333333333331"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="355.33333333333331"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-eK-ql5">
-                                    <rect key="frame" x="12" y="0.0" width="75" height="355.33333333333331"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-eK-ql5">
+                                    <rect key="frame" x="12" y="0.0" width="369" height="355.33333333333331"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitHubLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4E2-bk-Qrf">
-                                            <rect key="frame" x="0.0" y="0.0" width="75" height="64"/>
+                                            <rect key="frame" x="152.66666666666666" y="0.0" width="64" height="64"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="7Xp-Fc-EhL"/>
@@ -45,49 +46,49 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuD-Dd-QvA" userLabel="titleLabel">
-                                            <rect key="frame" x="0.0" y="80" width="75" height="27.666666666666671"/>
+                                            <rect key="frame" x="155.33333333333334" y="80" width="58.666666666666657" height="27.666666666666671"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                             <color key="textColor" name="mainLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDJ-ro-N4U" userLabel="versionLabel">
-                                            <rect key="frame" x="0.0" y="123.66666666666667" width="75" height="15.666666666666671"/>
+                                            <rect key="frame" x="168" y="123.66666666666667" width="33" height="15.666666666666671"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" name="mainLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4O-PM-7hP" userLabel="descriptionLabel">
-                                            <rect key="frame" x="0.0" y="155.33333333333331" width="75" height="18"/>
+                                            <rect key="frame" x="166" y="155.33333333333331" width="37.333333333333343" height="18"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" name="mainLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLw-FU-1j4" userLabel="supportedEventsTitleLabel">
-                                            <rect key="frame" x="0.0" y="189.33333333333331" width="75" height="20.333333333333343"/>
+                                            <rect key="frame" x="163" y="189.33333333333331" width="43.333333333333343" height="20.333333333333343"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <color key="textColor" name="mainLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqr-pf-3Ci" userLabel="supportedEventsLabel">
-                                            <rect key="frame" x="0.0" y="225.66666666666669" width="75" height="17"/>
+                                            <rect key="frame" x="167" y="225.66666666666669" width="35.333333333333343" height="17"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" name="mainLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnR-8U-Oby" userLabel="technologiesLabel">
-                                            <rect key="frame" x="0.0" y="258.66666666666669" width="75" height="17"/>
+                                            <rect key="frame" x="167" y="258.66666666666669" width="35.333333333333343" height="17"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" name="mainLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzL-YE-hUX" userLabel="apiButton">
-                                            <rect key="frame" x="0.0" y="291.66666666666669" width="75" height="34.333333333333314"/>
+                                            <rect key="frame" x="147" y="291.66666666666669" width="75" height="34.333333333333314"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" name="mainLabelColor"/>
                                             <state key="normal" title="Button"/>
@@ -97,7 +98,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSu-Ce-n6M" userLabel="footerLabel">
-                                            <rect key="frame" x="0.0" y="342" width="75" height="13.333333333333314"/>
+                                            <rect key="frame" x="170.33333333333334" y="342" width="28.666666666666657" height="13.333333333333314"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" name="mainLabelColor"/>

@@ -7,13 +7,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Go to GitHub REST API Documentation"
+            "value" : "GitHub REST API Documentation"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vai a Documentazione GitHub REST API"
+            "value" : "Documentazione GitHub REST API"
           }
         }
       }
@@ -69,30 +69,45 @@
         }
       }
     },
-    "about.supported_events.description" : {
+    "about.supported_events" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Monitor 16 types of GitHub events, including commits, branch and tag creation and deletion, discussions, forks, wiki updates, issue and pull request activity, reviews, pushes, releases, and collaborator additions."
+            "value" : "Supported events\n\nPush · Pull Request · Issues · Watch · Fork"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Monitora 16 tipologie di eventi GitHub: commit, creazione ed eliminazione di branch e tag, discussioni, fork, aggiornamenti wiki, commenti e attività su issue e pull request, revisioni, push, release e aggiunta di collaboratori."
+            "value" : "Eventi supportati\n\nPush · Pull Request · Issues · Watch · Fork"
+          }
+        }
+      }
+    },
+    "about.supported_events.description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Push · Pull Request · Issues · Watch · Fork · Create · Delete · Discussion · Wiki · Comments · Member · Public · Reviews · Release"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Push · Pull Request · Issue · Watch · Fork · Creazione · Eliminazione · Discussioni · Wiki · Commenti · Membri · Pubblicazione · Revisioni · Release"
           }
         }
       }
     },
     "about.supported_events.title" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Supported events"
+            "value" : "Supported Events"
           }
         },
         "it" : {
@@ -133,6 +148,176 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "GitHub Events"
+          }
+        }
+      }
+    },
+    "about.token.configured" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Authentication enabled"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autenticazione attiva"
+          }
+        }
+      }
+    },
+    "about.token.empty" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a token"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci un token"
+          }
+        }
+      }
+    },
+    "about.token.error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to access Keychain"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Errore di accesso al Keychain"
+          }
+        }
+      }
+    },
+    "about.token.not_configured" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Using anonymous access"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesso anonimo"
+          }
+        }
+      }
+    },
+    "about.token.placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter Personal Access Token"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci Personal Access Token"
+          }
+        }
+      }
+    },
+    "about.token.remove" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove token"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi token"
+          }
+        }
+      }
+    },
+    "about.token.removed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Token removed"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Token rimosso"
+          }
+        }
+      }
+    },
+    "about.token.save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save token"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva token"
+          }
+        }
+      }
+    },
+    "about.token.saved" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Token saved successfully"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Token salvato correttamente"
+          }
+        }
+      }
+    },
+    "about.token.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub Authentication"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autenticazione GitHub"
           }
         }
       }
@@ -290,76 +475,569 @@
         }
       }
     },
-    "events.action.closed" : {
+    "event_detail.action" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "closed"
+            "value" : "Action"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "chiusa"
+            "value" : "Azione"
           }
         }
       }
     },
-    "events.action.opened" : {
+    "event_detail.assignee" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "opened"
+            "value" : "Assignee"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "aperta"
+            "value" : "Assegnatario"
           }
         }
       }
     },
-    "events.action.reopened" : {
+    "event_detail.assignees" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "reopened"
+            "value" : "Assignees"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "riaperta"
+            "value" : "Assegnatari"
           }
         }
       }
     },
-    "events.action.started" : {
+    "event_detail.before" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "starred"
+            "value" : "Previous commit"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ha aggiunto una stella"
+            "value" : "Commit precedente"
+          }
+        }
+      }
+    },
+    "event_detail.branch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Branch"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Branch"
+          }
+        }
+      }
+    },
+    "event_detail.category" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Category"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoria"
+          }
+        }
+      }
+    },
+    "event_detail.comment" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commento"
+          }
+        }
+      }
+    },
+    "event_detail.commit_id" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commit ID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID commit"
+          }
+        }
+      }
+    },
+    "event_detail.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descrizione"
+          }
+        }
+      }
+    },
+    "event_detail.file" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File"
+          }
+        }
+      }
+    },
+    "event_detail.forked_repository" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forked repository"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repository forkato"
+          }
+        }
+      }
+    },
+    "event_detail.head" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HEAD commit"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commit HEAD"
+          }
+        }
+      }
+    },
+    "event_detail.labels" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Labels"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etichette"
+          }
+        }
+      }
+    },
+    "event_detail.master_branch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default branch"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Branch principale"
+          }
+        }
+      }
+    },
+    "event_detail.member" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Member"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membro"
+          }
+        }
+      }
+    },
+    "event_detail.navigation.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Event Details"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettaglio evento"
+          }
+        }
+      }
+    },
+    "event_detail.number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Number"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero"
+          }
+        }
+      }
+    },
+    "event_detail.open_repository" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open repository"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri repository"
+          }
+        }
+      }
+    },
+    "event_detail.pages" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagine"
+          }
+        }
+      }
+    },
+    "event_detail.payload" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Event details"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettagli evento"
+          }
+        }
+      }
+    },
+    "event_detail.push_id" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Push ID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID Push"
+          }
+        }
+      }
+    },
+    "event_detail.pusher_type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pusher type"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo utente"
+          }
+        }
+      }
+    },
+    "event_detail.ref" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reference"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riferimento"
+          }
+        }
+      }
+    },
+    "event_detail.ref_type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reference type"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo riferimento"
+          }
+        }
+      }
+    },
+    "event_detail.release" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Release"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Release"
+          }
+        }
+      }
+    },
+    "event_detail.repository" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repository"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repository"
+          }
+        }
+      }
+    },
+    "event_detail.review_state" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review state"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato revisione"
+          }
+        }
+      }
+    },
+    "event_detail.state" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "State"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato"
+          }
+        }
+      }
+    },
+    "event_detail.tag" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag"
+          }
+        }
+      }
+    },
+    "event_detail.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titolo"
+          }
+        }
+      }
+    },
+    "event_detail.url" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        }
+      }
+    },
+    "event_detail.visibility.private" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Private"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privato"
+          }
+        }
+      }
+    },
+    "event_detail.visibility.public" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Public"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pubblico"
           }
         }
       }
     },
     "events.description.commit_comment" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -376,7 +1054,7 @@
       }
     },
     "events.description.create" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -393,7 +1071,7 @@
       }
     },
     "events.description.delete" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -410,7 +1088,7 @@
       }
     },
     "events.description.discussion" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -427,7 +1105,7 @@
       }
     },
     "events.description.fork" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -444,7 +1122,7 @@
       }
     },
     "events.description.gollum" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -461,7 +1139,7 @@
       }
     },
     "events.description.issue_comment" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -478,7 +1156,7 @@
       }
     },
     "events.description.issues" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -495,24 +1173,24 @@
       }
     },
     "events.description.member" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "added a repository collaborator"
+            "value" : "added a repository member"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ha aggiunto un collaboratore al repository"
+            "value" : "ha aggiunto un membro al repository"
           }
         }
       }
     },
     "events.description.public" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -529,7 +1207,7 @@
       }
     },
     "events.description.pull_request" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -546,7 +1224,7 @@
       }
     },
     "events.description.pull_request_review" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -563,7 +1241,7 @@
       }
     },
     "events.description.pull_request_review_comment" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -574,13 +1252,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ha commentato una revisione di pull request"
+            "value" : "ha commentato una revisione di una pull request"
           }
         }
       }
     },
     "events.description.push" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -597,7 +1275,7 @@
       }
     },
     "events.description.release" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -614,7 +1292,7 @@
       }
     },
     "events.description.watch" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -631,65 +1309,53 @@
       }
     },
     "events.detail.branch" : {
+      "comment" : "A description of a push event. The argument is the name of the branch that was pushed.",
+      "extractionState" : "manual",
+      "isCommentAutoGenerated" : true,
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Branch: %@"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Branch: %@"
+            "value" : "events.detail.branch"
           }
         }
       }
     },
     "events.detail.fork" : {
+      "comment" : "Detail of a GitHub event when the event is a fork.",
+      "extractionState" : "manual",
+      "isCommentAutoGenerated" : true,
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New repository created"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nuovo repository creato"
+            "value" : "events.detail.fork"
           }
         }
       }
     },
     "events.detail.issues" : {
+      "comment" : "A description of an event that occurred on an issue.",
+      "extractionState" : "manual",
+      "isCommentAutoGenerated" : true,
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Issue · %@"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Issue · %@"
+            "value" : "events.detail.issues"
           }
         }
       }
     },
     "events.detail.pull_request" : {
+      "comment" : "A string that describes a pull request action.",
+      "extractionState" : "manual",
+      "isCommentAutoGenerated" : true,
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pull request #%d · %@"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pull request #%d · %@"
+            "value" : "events.detail.pull_request"
           }
         }
       }
@@ -876,7 +1542,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Commento"
+            "value" : "Commento issue"
           }
         }
       }
@@ -938,13 +1604,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pull"
+            "value" : "Pull Requests"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pull"
+            "value" : "Pull Request"
           }
         }
       }
@@ -1039,13 +1705,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Powered by GitHub API"
+            "value" : "Data provided by GitHub"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dati forniti da GitHub API"
+            "value" : "Dati forniti da GitHub"
           }
         }
       }
@@ -1055,13 +1721,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Last updated: %@ · Auto-refresh: %ds"
+            "value" : "%1$d events · Updated: %2$@ · Refresh: %3$d s · Auth: %4$@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ultimo aggiornamento: %@ · Aggiornamento: %ds"
+            "value" : "%1$d eventi · Aggiornamento: %2$@ · Intervallo: %3$d s · Autenticazione: %4$@"
           }
         }
       }
@@ -1117,6 +1783,56 @@
         }
       }
     },
+    "generic.authenticated" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enabled"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva"
+          }
+        }
+      }
+    },
+    "generic.not_available_short" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/A"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/D"
+          }
+        }
+      }
+    },
+    "generic.unauthenticated" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non attiva"
+          }
+        }
+      }
+    },
     "header.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1146,11 +1862,11 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Eventi GitHub"
+            "value" : "GitHub Events"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version" : "1.1"
 }

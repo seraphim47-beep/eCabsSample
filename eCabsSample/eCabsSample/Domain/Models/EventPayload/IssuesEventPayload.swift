@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct IssuesEventPayload: Decodable, Sendable {
+nonisolated struct IssuesEventPayload: Decodable, Sendable {
 
     let action: String
     let issue: JSONValue

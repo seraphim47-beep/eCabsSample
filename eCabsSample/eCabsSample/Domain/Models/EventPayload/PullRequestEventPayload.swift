@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct PullRequestEventPayload: Decodable, Sendable {
+nonisolated struct PullRequestEventPayload: Decodable, Sendable {
 
     let action: String
     let number: Int

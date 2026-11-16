@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct PushEventPayload: Decodable, Sendable {
+nonisolated struct PushEventPayload: Decodable, Sendable {
 
     let repositoryID: Int?
     let pushID: Int?

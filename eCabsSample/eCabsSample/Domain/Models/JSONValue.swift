@@ -10,7 +10,7 @@
 
 import Foundation
 
-indirect enum JSONValue: Codable, Sendable {
+nonisolated indirect enum JSONValue: Codable, Sendable {
     case string(String)
     case integer(Int)
     case double(Double)

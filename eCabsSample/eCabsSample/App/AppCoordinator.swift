@@ -1,29 +1,36 @@
+
 //
 //  AppCoordinator.swift
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
-
-//  **IT:** Gestisce la navigazione tra lista e dettaglio.
-
-//  **EN:** Handles navigation between the list and detail views.
+//
+//  IT: Gestisce la navigazione tra lista e dettaglio.
+//  EN: Handles navigation between the list and detail views.
+//
 
 import UIKit
 
 @MainActor
 final class AppCoordinator {
 
+    // MARK: - Properties
+
     private let window: UIWindow
     private var navigationController: UINavigationController?
+    private let avatarLoader = AvatarLoader()
+
+    // MARK: - Initialization
 
     init(window: UIWindow) {
         self.window = window
     }
 
+    // MARK: - Start
+
     func start() {
         let apiClient = GitHubAPIClient()
         let mergeEventsUseCase = MergeEventsUseCase()
-
         let repository = EventsRepository(
             apiClient: apiClient,
             mergeEventsUseCase: mergeEventsUseCase
@@ -33,6 +40,7 @@ final class AppCoordinator {
 
         let viewController = EventsViewController(
             viewModel: viewModel,
+            avatarLoader: avatarLoader,
             onSelectEvent: { [weak self] event in
                 self?.showEventDetail(event)
             },
@@ -41,7 +49,10 @@ final class AppCoordinator {
             }
         )
 
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let navigationController = UINavigationController(
+            rootViewController: viewController
+        )
+
         self.navigationController = navigationController
 
         window.rootViewController = navigationController
@@ -52,10 +63,24 @@ final class AppCoordinator {
 
     private func showAbout() {
         let aboutViewController = AboutViewController()
-        navigationController?.pushViewController(aboutViewController, animated: true)
+        navigationController?.pushViewController(
+            aboutViewController,
+            animated: true
+        )
     }
 
     private func showEventDetail(_ event: GitHubEvent) {
-        // TODO: Implementare la navigazione al dettaglio dell'evento.
+        let viewModel = EventDetailViewModel(event: event)
+
+        let viewController = EventDetailViewController(
+            viewModel: viewModel,
+            avatarLoader: avatarLoader
+        )
+
+        navigationController?.pushViewController(
+            viewController,
+            animated: true
+        )
     }
 }
+

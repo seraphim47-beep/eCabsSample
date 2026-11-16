@@ -15,13 +15,15 @@ struct GitHubAPIClient: Sendable {
     // MARK: - Properties
 
     private let session: URLSession
+    private let tokenStore: GitHubTokenStore
 
     private let defaultPollInterval = 60
 
     // MARK: - Initialization
 
-    init(session: URLSession = .shared) {
+    init(session: URLSession = .shared, tokenStore: GitHubTokenStore = GitHubTokenStore()) {
         self.session = session
+        self.tokenStore = tokenStore
     }
 
     // MARK: - Fetch Events
@@ -37,6 +39,10 @@ struct GitHubAPIClient: Sendable {
         request.setValue("application/vnd.github+json", forHTTPHeaderField: "Accept")
         request.setValue("2026-03-10", forHTTPHeaderField: "X-GitHub-Api-Version")
         request.setValue("GitHubEvents-iOS", forHTTPHeaderField: "User-Agent")
+        
+        if let token = try await tokenStore.read(), !token.isEmpty {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
 
         if let etag {
             request.setValue(etag, forHTTPHeaderField: "If-None-Match")

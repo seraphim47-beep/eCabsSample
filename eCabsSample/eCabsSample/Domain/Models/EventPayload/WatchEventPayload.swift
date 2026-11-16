@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct WatchEventPayload: Decodable, Sendable {
+nonisolated struct WatchEventPayload: Decodable, Sendable {
 
     let action: String
 }

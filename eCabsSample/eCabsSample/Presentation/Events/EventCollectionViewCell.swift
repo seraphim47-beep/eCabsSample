@@ -211,9 +211,43 @@ final class EventCollectionViewCell: UICollectionViewCell {
 
         case .fork:
             return String(localized: "events.detail.fork")
+            
+        case .gollum:
+            return eventDescription(for: event)
+
+        case .issueComment:
+            return eventDescription(for: event)
+
+        case .member:
+            return eventDescription(for: event)
+
+        case .publicEvent:
+            return eventDescription(for: event)
+
+        case .pullRequestReview:
+            return eventDescription(for: event)
+
+        case .pullRequestReviewComment:
+            return eventDescription(for: event)
+
+        case .release:
+            return eventDescription(for: event)
+            
+        case .commitComment:
+            return ""
+
+        case .create:
+            return ""
+
+        case .delete:
+            return ""
+
+        case .discussion:
+            return ""
 
         case .unknown:
             return ""
+
         }
     }
 

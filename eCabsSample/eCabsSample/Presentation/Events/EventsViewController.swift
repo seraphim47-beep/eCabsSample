@@ -32,6 +32,7 @@ final class EventsViewController: UIViewController {
     private let viewModel: EventsViewModel
     private let onSelectEvent: (GitHubEvent) -> Void
     private let onShowAbout: () -> Void
+    private let avatarLoader: AvatarLoader
 
     private var events: [GitHubEvent] = []
 
@@ -42,18 +43,16 @@ final class EventsViewController: UIViewController {
         "WatchEvent",
         "ForkEvent"
     ]
-    
-    private let avatarLoader = AvatarLoader()
-    
+
     private(set) var availableEventTypes: [String] = []
 
     // MARK: - Initialization
 
-    init( viewModel: EventsViewModel, onSelectEvent: @escaping (GitHubEvent) -> Void, onShowAbout: @escaping () -> Void) {
+    init(viewModel: EventsViewModel, avatarLoader: AvatarLoader, onSelectEvent: @escaping (GitHubEvent) -> Void, onShowAbout: @escaping () -> Void) {
         self.viewModel = viewModel
+        self.avatarLoader = avatarLoader
         self.onSelectEvent = onSelectEvent
         self.onShowAbout = onShowAbout
-
         super.init(nibName: "EventsViewController", bundle: nil)
     }
 
@@ -356,17 +355,35 @@ extension EventsViewController: UICollectionViewDelegateFlowLayout {
             lastUpdated = "--:--"
         }
 
-        let interval = viewModel.currentPollInterval
+        let pollInterval = viewModel.currentPollInterval
+        
+        let eventsCount = viewModel.events.count // maybe events/allEvents for filter info: 5/30 
 
-        footerStatusLabel.text = String(
-            format: String(localized: "events.footer.status"),
-            lastUpdated,
-            interval
-        )
+        footerStatusLabel.text = String(format: String(localized: "events.footer.status"), eventsCount, lastUpdated, pollInterval, String(localized: "generic.not_available_short"))
 
         footerAttributionLabel.text = String(localized: "events.footer.attribution")
         
         footerView.addBorderTop(size: 1, color: .separator, opacity: 0.5, margin: 0)
+        
+        updateAuthStatus(eC: eventsCount, lU: lastUpdated, pI: pollInterval)
+    }
+    
+    private func updateAuthStatus(eC: Int, lU: String, pI: Int)
+    {
+        Task {
+            do {
+                let token = try await GitHubTokenStore().read()
+                let isConfigured = !(token ?? "").isEmpty
+                let auth = String(
+                    localized: isConfigured
+                        ? "generic.authenticated"
+                        : "generic.unauthenticated"
+                )
+                footerStatusLabel.text = String(format: String(localized: "events.footer.status"), eC, lU, pI, auth)
+            } catch {
+
+            }
+        }
     }
     
     private func updateFilterSegmentedControl() {

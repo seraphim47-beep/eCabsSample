@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct ForkEventPayload: Decodable, Sendable {
+nonisolated struct ForkEventPayload: Decodable, Sendable {
 
     let action: String?
     let forkee: JSONValue
