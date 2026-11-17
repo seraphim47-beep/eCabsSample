@@ -11,8 +11,16 @@ import Foundation
 import Security
 
 actor GitHubTokenStore {
-    private let service = Bundle.main.bundleIdentifier ?? "GitHubEvents"
-    private let account = "github-personal-access-token"
+    private var service = Bundle.main.bundleIdentifier ?? "GitHubEvents"
+    private var account = "github-personal-access-token"
+    
+    init(
+         service: String = Bundle.main.bundleIdentifier ?? "GitHubEvents",
+         account: String = "github-personal-access-token"
+     ) {
+         self.service = service
+         self.account = account
+     }
 
     func save(_ token: String) throws {
         let data = Data(token.utf8)

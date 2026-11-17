@@ -10,7 +10,7 @@
 
 import Foundation
 
-struct GitHubAPIClient: Sendable {
+struct GitHubAPIClient: GitHubAPIClientProtocol, Sendable {
 
     // MARK: - Properties
 

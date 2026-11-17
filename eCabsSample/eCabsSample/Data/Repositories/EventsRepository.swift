@@ -13,7 +13,7 @@ actor EventsRepository: EventsRepositoryProtocol {
 
     // MARK: - Properties
 
-    private let apiClient: GitHubAPIClient
+    private let apiClient: any GitHubAPIClientProtocol
     private let mergeEventsUseCase: MergeEventsUseCase
 
     private var etag: String?
@@ -21,7 +21,7 @@ actor EventsRepository: EventsRepositoryProtocol {
 
     // MARK: - Initialization
 
-    init(apiClient: GitHubAPIClient, mergeEventsUseCase: MergeEventsUseCase) {
+    init(apiClient: any GitHubAPIClientProtocol, mergeEventsUseCase: MergeEventsUseCase) {
         self.apiClient = apiClient
         self.mergeEventsUseCase = mergeEventsUseCase
     }

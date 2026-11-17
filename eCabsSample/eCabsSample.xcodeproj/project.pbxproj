@@ -17,7 +17,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		958AD68130A9AE11003CB844 /* Architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Architecture.md; sourceTree = "<group>"; };
+		959D694030AC759600140AD9 /* ARCHITECTURE_EN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE_EN.md; sourceTree = "<group>"; };
+		959D694130AC759600140AD9 /* ARCHITECTURE_IT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE_IT.md; sourceTree = "<group>"; };
 		95F44F4530A707DF00AA6931 /* eCabsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCabsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F44F5B30A707E200AA6931 /* eCabsSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eCabsSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,7 +70,8 @@
 		95F44F3C30A707DF00AA6931 = {
 			isa = PBXGroup;
 			children = (
-				958AD68130A9AE11003CB844 /* Architecture.md */,
+				959D694030AC759600140AD9 /* ARCHITECTURE_EN.md */,
+				959D694130AC759600140AD9 /* ARCHITECTURE_IT.md */,
 				95F44F4730A707DF00AA6931 /* eCabsSample */,
 				95F44F5E30A707E200AA6931 /* eCabsSampleTests */,
 				95F44F4630A707DF00AA6931 /* Products */,

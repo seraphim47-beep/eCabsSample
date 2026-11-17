@@ -5,7 +5,6 @@
 //  Created by Matteo Savoldelli on 13/11/2026.
 //  Gestisce lo stato della lista, il caricamento, il filtraggio e l'aggiornamento.
 //
-
 import Foundation
 
 @MainActor
@@ -27,8 +26,9 @@ final class EventsViewModel {
     private(set) var selectedTypes: Set<String> = []
     private(set) var lastUpdatedAt: Date?
     private(set) var availableEventTypes: [String] = []
+
     var onStateChange: (() -> Void)?
-    
+
     private let preferredEventTypeOrder = [
         "PushEvent",
         "PullRequestEvent",
@@ -61,11 +61,12 @@ final class EventsViewModel {
 
             allEvents = result.events
             currentPollInterval = result.pollInterval
+
             if result.wasModified {
                 lastUpdatedAt = Date()
             }
-            hasLoadedEvents = true
 
+            hasLoadedEvents = true
             applyFilters()
 
             isLoading = false
@@ -73,10 +74,45 @@ final class EventsViewModel {
 
             startPolling()
 
-        } catch {
-            errorMessage = error.localizedDescription
+        } catch let error as APIError {
+            switch error {
+            case .rateLimited(let resetDate):
+                if let resetDate {
+                    let delay = max(1, Int(ceil(resetDate.timeIntervalSinceNow)))
+                    currentPollInterval = delay
+
+                    let formattedDate = resetDate.formatted(
+                        date: .omitted,
+                        time: .shortened
+                    )
+
+                    errorMessage = String(
+                        format: String(localized: "error.rate_limit_until"),
+                        formattedDate
+                    )
+                } else {
+                    errorMessage = String(localized: "error.rate_limit")
+                }
+
+            case .networkError:
+                errorMessage = String(localized: "error.network")
+
+            default:
+                errorMessage = error.localizedDescription
+            }
+
             isLoading = false
             onStateChange?()
+
+            // Avvia il polling anche se il primo caricamento fallisce.
+            startPolling()
+
+        } catch {
+            errorMessage = String(localized: "error.generic")
+            isLoading = false
+            onStateChange?()
+
+            startPolling()
         }
     }
 
@@ -100,6 +136,8 @@ final class EventsViewModel {
             }
 
             errorMessage = nil
+            hasLoadedEvents = true
+
             applyFilters()
             onStateChange?()
 
@@ -121,12 +159,14 @@ final class EventsViewModel {
                         format: String(localized: "error.rate_limit_until"),
                         formattedDate
                     )
+
                     onStateChange?()
                     return delay
                 }
 
                 errorMessage = String(localized: "error.rate_limit")
                 onStateChange?()
+
                 return currentPollInterval
 
             case .networkError:
@@ -142,6 +182,7 @@ final class EventsViewModel {
         } catch {
             errorMessage = String(localized: "error.generic")
             onStateChange?()
+
             return currentPollInterval
         }
     }
@@ -190,7 +231,6 @@ final class EventsViewModel {
         }
 
         types.append(contentsOf: additionalTypes)
-
         availableEventTypes = types
 
         events = filterEventsUseCase.execute(
@@ -198,23 +238,4 @@ final class EventsViewModel {
             selectedTypes: selectedTypes
         )
     }
- 
-//    private func applyFilters() {
-//        let availableTypes = Set(allEvents.map(\.type))
-//
-//        availableEventTypes = preferredEventTypeOrder.filter {
-//            availableTypes.contains($0)
-//        }
-//
-//        let additionalTypes = availableTypes
-//            .subtracting(preferredEventTypeOrder)
-//            .sorted()
-//
-//        availableEventTypes.append(contentsOf: additionalTypes)
-//
-//        events = filterEventsUseCase.execute(
-//            events: allEvents,
-//            selectedTypes: selectedTypes
-//        )
-//    }
 }
