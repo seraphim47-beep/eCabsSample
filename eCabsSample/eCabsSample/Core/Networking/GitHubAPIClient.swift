@@ -67,6 +67,7 @@ struct GitHubAPIClient: Sendable {
 
         let responseETag = httpResponse.value(forHTTPHeaderField: "ETag")
 
+        // Get response pollInterval
         let pollInterval = validatedPollInterval(
             httpResponse.value(forHTTPHeaderField: "X-Poll-Interval")
         )

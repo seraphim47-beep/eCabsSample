@@ -61,6 +61,7 @@ final class AppCoordinator {
 
     // MARK: - Navigation
 
+    // Oper about page
     private func showAbout() {
         let aboutViewController = AboutViewController()
         navigationController?.pushViewController(
@@ -69,6 +70,7 @@ final class AppCoordinator {
         )
     }
 
+    // Open eventdetail page
     private func showEventDetail(_ event: GitHubEvent) {
         let viewModel = EventDetailViewModel(event: event)
 
