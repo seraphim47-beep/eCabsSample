@@ -30,6 +30,8 @@ The app follows a layered architecture, using MVVM for presentation and a Coordi
 - Handles HTTP errors and GitHub API rate limits.
 - Supports Italian and English localization.
 - Includes an About screen with application and API information.
+- Support for iPad
+- Graphic optimization for iPad and landscape mode.
 
 ### Supported event types
 
@@ -151,6 +153,7 @@ e un Coordinator per la navigazione.
     GitHub.
 -   Localizzazione in italiano e inglese.
 -   Schermata About con informazioni sull'applicazione e sulle API.
+-   Ottimizzazione grafica per ipad e per modalità in lasdscape
 
 ### Tipologie di evento supportate
 
