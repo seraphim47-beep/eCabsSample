@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -112,7 +112,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="1bF-iV-rUT" firstAttribute="leading" secondItem="Vgl-0v-wVZ" secondAttribute="leading" constant="16" id="1mV-CL-aZi"/>
                                         <constraint firstAttribute="bottom" secondItem="1bF-iV-rUT" secondAttribute="bottom" id="1tf-6P-ZZK"/>
@@ -121,6 +121,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Vgl-0v-wVZ" secondAttribute="trailing" id="B5W-ON-VHa"/>
                                 <constraint firstItem="Vgl-0v-wVZ" firstAttribute="top" secondItem="qdl-zt-Ilz" secondAttribute="top" id="Pcg-bH-HRi"/>
@@ -141,7 +142,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" name="LaunchScreenColor"/>
             <constraints>
                 <constraint firstItem="sae-WP-LoL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1wz-fa-f7J"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sae-WP-LoL" secondAttribute="trailing" id="4yg-hT-GhY"/>
@@ -152,8 +153,8 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="LaunchScreenColor">
+            <color red="0.86299997568130493" green="0.87099999189376831" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

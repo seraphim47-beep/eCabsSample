@@ -149,6 +149,16 @@ final class EventsViewController: UIViewController {
             action: #selector(filterChanged),
             for: .valueChanged
         )
+        
+        let font =  DeviceInfo.isPad ? UIFont.systemFont(ofSize: 18, weight: .semibold) : UIFont.systemFont(ofSize: 9, weight: .regular)
+
+        filterSegmentedControl.setTitleTextAttributes([
+            .font: font
+        ], for: .normal)
+
+        filterSegmentedControl.setTitleTextAttributes([
+            .font: font
+        ], for: .selected)
 
         updateFilterSegmentedControl()
     }
