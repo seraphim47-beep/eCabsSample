@@ -3,7 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 16/11/2026.
-//
+
+//  **IT:** Estensione UIView per aggiungee bordo top a unaUIView (utilizzata per footerView in EventsViewController)
+
+//  **EN:** UIView extension to add a top border to a UIView (used for the footerView in EventsViewController).
 
 import UIKit
 

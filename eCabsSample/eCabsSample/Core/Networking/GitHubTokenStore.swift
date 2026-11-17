@@ -3,9 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 16/11/2026.
-//
 
+//  **EN:** An actor that asynchronously manages the Personal Access Token in the iOS Keychain. It exposes save, read, and delete operations. The token is stored as a `kSecClassGenericPassword` item and is accessible while the device is unlocked, on this device only.
 
+//  **IT:** È un actor che gestisce in modo asincrono il Personal Access Token nel Keychain iOS. Espone le operazioni di salvataggio, lettura e cancellazione. Il token viene conservato come elemento `kSecClassGenericPassword` ed è accessibile quando il dispositivo è sbloccato, solo su quel dispositivo.
 
 import Foundation
 import Security

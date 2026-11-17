@@ -5,15 +5,12 @@
 //  Created by Matteo Savoldelli on 13/11/2026.
 //  Visualizza le informazioni dell'evento.
 //
-
-
-//
 //  EventDetailViewController.swift
 //  eCabsSample
-//
-//  EN: Displays detailed information about a GitHub event.
-//  IT: Mostra le informazioni dettagliate di un evento GitHub.
-//
+
+//  **EN:** Displays detailed information about a GitHub event.
+
+//  **IT:** Mostra le informazioni dettagliate di un evento GitHub.
 
 import UIKit
 

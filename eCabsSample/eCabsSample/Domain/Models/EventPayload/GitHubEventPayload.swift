@@ -3,21 +3,13 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
+//
+//  GitHubEventPayload.swift
+//  eCabsSample
 
 // **EN:** Defines the supported GitHub event payload types and maps each event type to its corresponding payload model. Unknown event types are preserved as generic JSON values.
 
 // **IT:** Definisce le tipologie di payload GitHub supportate e associa ogni tipo di evento al relativo modello. Gli eventi non riconosciuti vengono conservati come valori JSON generici.
-
-//
-//  GitHubEventPayload.swift
-//  eCabsSample
-//
-//  EN: Defines the supported GitHub event payload types.
-//  Unknown or malformed payloads are preserved as generic JSON values.
-//
-//  IT: Definisce le tipologie di payload GitHub supportate.
-//  I payload sconosciuti o non validi vengono conservati come valori JSON generici.
-//
 
 import Foundation
 

@@ -5,8 +5,6 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
@@ -14,6 +12,7 @@ final class MergeEventsUseCaseTests: XCTestCase {
 
     private let sut = MergeEventsUseCase()
 
+    /// Ensures two event lists are correctly merged.
     func testExecuteMergesExistingAndIncomingEvents() {
         let existing = [
             makeEvent(id: "1", date: date(10)),
@@ -33,6 +32,7 @@ final class MergeEventsUseCaseTests: XCTestCase {
         XCTAssertEqual(Set(result.map(\.id)), Set(["1", "2", "3"]))
     }
 
+    /// Ensures events with duplicate identifiers are removed.
     func testExecuteRemovesDuplicateEvents() {
         let existing = [
             makeEvent(id: "1", date: date(10))
@@ -50,6 +50,7 @@ final class MergeEventsUseCaseTests: XCTestCase {
         XCTAssertEqual(result.count, 1)
     }
 
+    /// Ensures an incoming event replaces the previously stored event.
     func testExecuteIncomingEventOverridesExistingEvent() {
         let existing = [
             makeEvent(id: "1", type: "PushEvent", date: date(10))
@@ -69,6 +70,7 @@ final class MergeEventsUseCaseTests: XCTestCase {
         XCTAssertEqual(result.first?.createdAt, date(20))
     }
 
+    /// Ensures events are sorted from newest to oldest.
     func testExecuteSortsEventsByDateDescending() {
         let events = [
             makeEvent(id: "1", date: date(10)),
@@ -84,6 +86,7 @@ final class MergeEventsUseCaseTests: XCTestCase {
         XCTAssertEqual(result.map(\.id), ["2", "3", "1"])
     }
 
+    /// Validates behavior with empty input lists.
     func testExecuteReturnsEmptyArrayWhenInputsAreEmpty() {
         let result = sut.execute(existing: [], incoming: [])
 

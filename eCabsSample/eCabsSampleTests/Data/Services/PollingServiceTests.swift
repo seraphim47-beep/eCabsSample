@@ -5,14 +5,13 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
 @MainActor
 final class PollingServiceTests: XCTestCase {
 
+    /// Ensures the operation executes after the initial interval.
     func testPollingExecutesOperationAfterInitialInterval() async {
         let sut = PollingService()
         var executionCount = 0
@@ -28,6 +27,7 @@ final class PollingServiceTests: XCTestCase {
         XCTAssertEqual(executionCount, 1)
     }
 
+    /// Ensures polling stops when `stop()` is called.
     func testPollingStopsExecutingAfterStop() async {
         let sut = PollingService()
         var executionCount = 0
@@ -48,6 +48,7 @@ final class PollingServiceTests: XCTestCase {
         XCTAssertEqual(executionCount, 1)
     }
 
+    /// Ensures an updated interval is applied to subsequent cycles.
     func testPollingUsesUpdatedInterval() async {
         let sut = PollingService()
         var executionCount = 0
@@ -71,6 +72,7 @@ final class PollingServiceTests: XCTestCase {
         sut.stop()
     }
 
+    ///  Ensures the minimum one-second interval is respected.
     func testPollingUsesMinimumIntervalOfOneSecond() async {
         let sut = PollingService()
         var executionCount = 0
@@ -86,6 +88,7 @@ final class PollingServiceTests: XCTestCase {
         XCTAssertEqual(executionCount, 1)
     }
 
+    /// Ensures starting polling again stops the previous task.
     func testStartingPollingAgainStopsPreviousPolling() async {
         let sut = PollingService()
         var firstCount = 0

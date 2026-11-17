@@ -5,8 +5,6 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 import UIKit
 @testable import eCabsSample
@@ -19,6 +17,7 @@ final class AvatarLoaderTests: XCTestCase {
         super.tearDown()
     }
 
+    /// Ensures a valid image is downloaded and converted into `UIImage`.
     func testLoadImageReturnsImageForSuccessfulResponse() async {
         AvatarURLProtocolMock.requestHandler = { _ in
             .success((200, self.makeImageData()))
@@ -33,6 +32,7 @@ final class AvatarLoaderTests: XCTestCase {
         XCTAssertEqual(AvatarURLProtocolMock.requestCount, 1)
     }
 
+    /// Ensures subsequent requests reuse the image cache.
     func testLoadImageUsesCacheForRepeatedRequests() async {
         AvatarURLProtocolMock.requestHandler = { _ in
             .success((200, self.makeImageData()))
@@ -49,6 +49,7 @@ final class AvatarLoaderTests: XCTestCase {
         XCTAssertEqual(AvatarURLProtocolMock.requestCount, 1)
     }
 
+    /// Ensures concurrent requests for the same URL share one loading operation.
     func testLoadImageSharesConcurrentRequests() async {
         AvatarURLProtocolMock.responseDelay = 0.2
         AvatarURLProtocolMock.requestHandler = { _ in
@@ -68,6 +69,7 @@ final class AvatarLoaderTests: XCTestCase {
         XCTAssertEqual(AvatarURLProtocolMock.requestCount, 1)
     }
 
+    ///  Ensures an invalid HTTP response does not return an image.
     func testLoadImageReturnsNilForHTTPError() async {
         AvatarURLProtocolMock.requestHandler = { _ in
             .success((404, Data()))
@@ -80,6 +82,7 @@ final class AvatarLoaderTests: XCTestCase {
         XCTAssertEqual(AvatarURLProtocolMock.requestCount, 1)
     }
 
+    /// Validates handling of invalid image data.
     func testLoadImageReturnsNilForInvalidImageData() async {
         AvatarURLProtocolMock.requestHandler = { _ in
             .success((200, Data("invalid image".utf8)))
@@ -91,6 +94,7 @@ final class AvatarLoaderTests: XCTestCase {
         XCTAssertNil(image)
     }
 
+    /// Validates network error handling without an application crash.
     func testLoadImageReturnsNilForNetworkError() async {
         AvatarURLProtocolMock.requestHandler = { _ in
             .failure(URLError(.notConnectedToInternet))

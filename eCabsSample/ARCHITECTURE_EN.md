@@ -282,7 +282,6 @@ Display the information prepared by the ViewModel, dynamically building detail s
 #### `AboutViewController.swift` and `AboutViewController.xib`
 
 Display application information, version, supported event types, technologies, and a link to the GitHub REST API documentation.
-
 The screen also includes Personal Access Token management: entry, saving, removal, and configuration status display through `GitHubTokenStore`.
 
 ## 8. Main flows

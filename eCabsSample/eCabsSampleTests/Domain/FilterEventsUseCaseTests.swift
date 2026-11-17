@@ -5,8 +5,6 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
@@ -21,6 +19,7 @@ final class FilterEventsUseCaseTests: XCTestCase {
         makeEvent(id: "4", type: "PushEvent")
     ]
 
+    /// Ensures all events are returned when no filters are selected.
     func testExecuteReturnsAllEventsWhenNoFiltersAreSelected() {
         let result = sut.execute(
             events: events,
@@ -30,6 +29,7 @@ final class FilterEventsUseCaseTests: XCTestCase {
         XCTAssertEqual(result.map(\.id), ["1", "2", "3", "4"])
     }
 
+    /// Validates filtering by a single event type.
     func testExecuteFiltersEventsBySingleType() {
         let result = sut.execute(
             events: events,
@@ -40,6 +40,7 @@ final class FilterEventsUseCaseTests: XCTestCase {
         XCTAssertTrue(result.allSatisfy { $0.type == "PushEvent" })
     }
 
+    /// Validates filtering by multiple event types.
     func testExecuteFiltersEventsByMultipleTypes() {
         let result = sut.execute(
             events: events,
@@ -49,6 +50,7 @@ final class FilterEventsUseCaseTests: XCTestCase {
         XCTAssertEqual(result.map(\.id), ["1", "2", "4"])
     }
 
+    ///  Ensures an empty result is returned when no event matches the filters.
     func testExecuteReturnsEmptyArrayWhenNoEventsMatch() {
         let result = sut.execute(
             events: events,
@@ -58,6 +60,7 @@ final class FilterEventsUseCaseTests: XCTestCase {
         XCTAssertTrue(result.isEmpty)
     }
 
+    /// Validates behavior with an empty input   list
     func testExecuteReturnsEmptyArrayWhenInputIsEmpty() {
         let result = sut.execute(
             events: [],

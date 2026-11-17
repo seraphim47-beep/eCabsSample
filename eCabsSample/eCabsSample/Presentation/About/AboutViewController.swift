@@ -3,7 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
-//
+
+//  **EN:**Display application information, version, supported event types, technologies, and a link to the GitHub REST API documentation. The screen also includes Personal Access Token management: entry, saving, removal, and configuration status display through `GitHubTokenStore`.
+
+//  **IT:** Mostrano le informazioni sull'applicazione, la versione, le tipologie di eventi supportate, le tecnologie utilizzate e il collegamento alla documentazione GitHub REST API. La schermata include anche la gestione del Personal Access Token: inserimento, salvataggio, rimozione e visualizzazione dello stato di configurazione tramite `GitHubTokenStore`.
 
 import UIKit
 

@@ -28,8 +28,8 @@ necessario, mock e `URLProtocol` personalizzati.
   `testExecuteSortsEventsByDateDescending`           Verifica l'ordinamento dal più
                                                      recente al meno recente.
 
-  `testExecuteReturnsEmptyArrayWhenInputsAreEmpty`   Verifica il comportamento con liste
-                                                     vuote.
+  `testExecuteReturnsEmptyArrayWhenInputsAreEmpty`   Verifica il comportamento con liste vuote.
+
   --------------------------------------------------------------------------------------
 
 ## FilterEventsUseCaseTests --- 5 test
@@ -50,8 +50,8 @@ necessario, mock e `URLProtocol` personalizzati.
                                                           nessun evento corrisponde ai
                                                           filtri.
 
-  `testExecuteReturnsEmptyArrayWhenInputIsEmpty`          Verifica il comportamento con una
-                                                          lista iniziale vuota.
+  `testExecuteReturnsEmptyArrayWhenInputIsEmpty`          Verifica il comportamento con una lista iniziale vuota.
+
   -------------------------------------------------------------------------------------------
 
 ## EventsRepositoryTests --- 5 test
@@ -72,8 +72,8 @@ necessario, mock e `URLProtocol` personalizzati.
   `testFetchEventsPreservesAndUpdatesETag`               Verifica aggiornamento e
                                                          conservazione dell'ETag.
 
-  `testFetchEventsPropagatesAPIError`                    Verifica la propagazione degli
-                                                         errori dell'API client.
+  `testFetchEventsPropagatesAPIError`                    Verifica la propagazione degli errori dell'API client.
+
   ------------------------------------------------------------------------------------------
 
 ## EventsViewModelTests --- 9 test
@@ -106,9 +106,8 @@ necessario, mock e `URLProtocol` personalizzati.
   `testLoadEventsHandlesRateLimitWithoutResetDate`            Verifica il rate limit senza data
                                                               di ripristino.
 
-  `testLoadEventsPreservesPreviouslyLoadedEventsAfterError`   Verifica la conservazione degli
-                                                              eventi già caricati dopo un errore
-                                                              successivo.
+  `testLoadEventsPreservesPreviouslyLoadedEventsAfterError`   Verifica la conservazione degli eventi già caricati dopo un errore successivo.
+
   -----------------------------------------------------------------------------------------------
 
 ## GitHubAPIClientTests --- 9 test
@@ -140,8 +139,8 @@ necessario, mock e `URLProtocol` personalizzati.
   `testFetchEventsHandlesRateLimit429`                          Verifica il rate limit HTTP 429 e
                                                                 l'header `Retry-After`.
 
-  `testFetchEventsHandlesRateLimit403`                          Verifica il rate limit HTTP 403
-                                                                tramite gli header di reset GitHub.
+  `testFetchEventsHandlesRateLimit403`                          Verifica il rate limit HTTP 403 tramite gli header di reset di GitHub
+
   -------------------------------------------------------------------------------------------------
 
 ## PollingServiceTests --- 5 test
@@ -162,8 +161,8 @@ necessario, mock e `URLProtocol` personalizzati.
                                                        dell'intervallo minimo di un
                                                        secondo.
 
-  `testStartingPollingAgainStopsPreviousPolling`       Verifica che un nuovo avvio
-                                                       interrompa il polling precedente.
+  `testStartingPollingAgainStopsPreviousPolling`       Verifica che un nuovo avvio interrompa il polling precedente
+
   ----------------------------------------------------------------------------------------
 
 ## AvatarLoaderTests --- 6 test
@@ -188,8 +187,8 @@ necessario, mock e `URLProtocol` personalizzati.
   `testLoadImageReturnsNilForInvalidImageData`       Verifica la gestione di dati
                                                      immagine non validi.
 
-  `testLoadImageReturnsNilForNetworkError`           Verifica la gestione degli errori
-                                                     di rete senza crash.
+  `testLoadImageReturnsNilForNetworkError`           Verifica la gestione degli errori di rete senza crash.
+
   --------------------------------------------------------------------------------------
 
 ## GitHubTokenStoreTests --- 5 test
@@ -209,8 +208,8 @@ necessario, mock e `URLProtocol` personalizzati.
   `testDeleteRemovesToken`                        Verifica la rimozione del token dal
                                                   Keychain.
 
-  `testDeleteDoesNotThrowWhenTokenDoesNotExist`   Verifica che la cancellazione
-                                                  ripetuta non generi errori.
+  `testDeleteDoesNotThrowWhenTokenDoesNotExist`   Verifica che la cancellazione ripetuta non generi errori.
+
   -----------------------------------------------------------------------------------
 
 ## EventDetailViewModelTests --- 5 test
@@ -232,8 +231,8 @@ necessario, mock e `URLProtocol` personalizzati.
                                                   disponibili in un payload
                                                   sconosciuto.
 
-  `testEmptyPayloadReturnsNoSections`             Verifica che un payload sconosciuto
-                                                  vuoto non generi sezioni.
+  `testEmptyPayloadReturnsNoSections`             Verifica che un payload sconosciuto vuoto non generi sezioni.
+
   -----------------------------------------------------------------------------------
 
 ## Esecuzione dei test

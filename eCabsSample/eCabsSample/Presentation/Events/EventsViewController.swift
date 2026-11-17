@@ -4,8 +4,10 @@
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
 //  Costruisce e gestisce la UITableView, i filtri e le interazioni.
-//
 
+//  **EN:** Manages the main screen and its UIKit interface: header, `UICollectionView`, filters, loading indicator, error messages, retry button, and footer. It observes `EventsViewModel` updates through the `onStateChange` closure. It manages polling according to the screen's visibility and forwards navigation actions for event details and About to the Coordinator.
+
+//  **IT:** Gestisce la schermata principale e la sua interfaccia UIKit: header, `UICollectionView`, filtri, indicatore di caricamento, messaggi di errore, pulsante di retry e footer. Osserva gli aggiornamenti del `EventsViewModel` tramite la closure `onStateChange`. Gestisce il ciclo di vita del polling in relazione alla visibilità della schermata e inoltra al Coordinator le azioni di navigazione verso il dettaglio e About.
 
 import UIKit
 

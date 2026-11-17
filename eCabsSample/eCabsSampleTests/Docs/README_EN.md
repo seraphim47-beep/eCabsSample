@@ -29,7 +29,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
                                                      newest to oldest.
 
   `testExecuteReturnsEmptyArrayWhenInputsAreEmpty`   Validates behavior with empty input
-                                                     lists.
+                                                     lists
+                                                    
   --------------------------------------------------------------------------------------
 
 ## FilterEventsUseCaseTests --- 5 tests
@@ -49,8 +50,7 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testExecuteReturnsEmptyArrayWhenNoEventsMatch`         Ensures an empty result is returned
                                                           when no event matches the filters.
 
-  `testExecuteReturnsEmptyArrayWhenInputIsEmpty`          Validates behavior with an empty
-                                                          input list.
+  `testExecuteReturnsEmptyArrayWhenInputIsEmpty`          Validates behavior with an empty input                                                     list
   -------------------------------------------------------------------------------------------
 
 ## EventsRepositoryTests --- 5 tests
@@ -70,8 +70,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testFetchEventsPreservesAndUpdatesETag`               Validates ETag updates and
                                                          preservation.
 
-  `testFetchEventsPropagatesAPIError`                    Ensures API client errors are
-                                                         correctly propagated.
+  `testFetchEventsPropagatesAPIError`                    Ensures API client errors are correctly                                                    propagated
+  
   ------------------------------------------------------------------------------------------
 
 ## EventsViewModelTests --- 9 tests
@@ -102,9 +102,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testLoadEventsHandlesRateLimitWithoutResetDate`            Validates rate limit handling when
                                                               no reset date is available.
 
-  `testLoadEventsPreservesPreviouslyLoadedEventsAfterError`   Ensures previously loaded events
-                                                              remain available after a subsequent
-                                                              request fails.
+  `testLoadEventsPreservesPreviouslyLoadedEventsAfterError`   Ensures previously loaded events                                                           remain available after a                                                                   subsequent request fails.
+
   -----------------------------------------------------------------------------------------------
 
 ## GitHubAPIClientTests --- 9 tests
@@ -121,11 +120,9 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testFetchEventsSendsETagHeader`                              Ensures the ETag is sent in the
                                                                 `If-None-Match` header.
 
-  `testFetchEventsUsesDefaultPollIntervalWhenHeaderIsMissing`   Validates the default interval when
-                                                                the header is missing.
+  `testFetchEventsUsesDefaultPollIntervalWhenHeaderIsMissing`   Validates the default interval                                                             when the header is missing.
 
-  `testFetchEventsUsesDefaultPollIntervalWhenHeaderIsInvalid`   Validates the default interval when
-                                                                the received value is invalid.
+  `testFetchEventsUsesDefaultPollIntervalWhenHeaderIsInvalid`   Validates the default interval                                                             when the received value is                                                                 invalid.
 
   `testFetchEventsThrowsDecodingErrorForInvalidJSON`            Validates handling of undecodable
                                                                 JSON.
@@ -136,9 +133,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
                                                                 handling and the `Retry-After`
                                                                 header.
 
-  `testFetchEventsHandlesRateLimit403`                          Validates HTTP 403 rate limit
-                                                                handling using GitHub reset
-                                                                headers.
+  `testFetchEventsHandlesRateLimit403`                          Validates HTTP 403 rate limit                                                              handling using GhitHub reset                                                               headers
+
   -------------------------------------------------------------------------------------------------
 
 ## PollingServiceTests --- 5 tests
@@ -158,8 +154,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testPollingUsesMinimumIntervalOfOneSecond`          Ensures the minimum one-second
                                                        interval is respected.
 
-  `testStartingPollingAgainStopsPreviousPolling`       Ensures starting polling again
-                                                       stops the previous task.
+  `testStartingPollingAgainStopsPreviousPolling`       Ensures starting polling again stops the                                                   previous task.
+ 
   ----------------------------------------------------------------------------------------
 
 ## AvatarLoaderTests --- 6 tests
@@ -183,8 +179,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testLoadImageReturnsNilForInvalidImageData`       Validates handling of invalid image
                                                      data.
 
-  `testLoadImageReturnsNilForNetworkError`           Validates network error handling
-                                                     without an application crash.
+  `testLoadImageReturnsNilForNetworkError`           Validates network error handling without an                                                application crash.
+
   --------------------------------------------------------------------------------------
 
 ## GitHubTokenStoreTests --- 5 tests
@@ -204,8 +200,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testDeleteRemovesToken`                        Ensures the token is removed from
                                                   the Keychain.
 
-  `testDeleteDoesNotThrowWhenTokenDoesNotExist`   Ensures repeated deletion does not
-                                                  throw an error.
+  `testDeleteDoesNotThrowWhenTokenDoesNotExist`   Ensures repeated deletion does not throw an                                                error
+  
   -----------------------------------------------------------------------------------
 
 ## EventDetailViewModelTests --- 5 tests
@@ -225,8 +221,8 @@ authentication. Tests use XCTest and, where required, custom mocks and
   `testUnknownPayloadMapsAvailableValues`         Validates mapping of available
                                                   fields from an unknown payload.
 
-  `testEmptyPayloadReturnsNoSections`             Ensures an empty unknown payload
-                                                  does not generate sections.
+  `testEmptyPayloadReturnsNoSections`             Ensures an empty unknown payload does not                                                  generate sections.
+ 
   -----------------------------------------------------------------------------------
 
 ## Running the tests

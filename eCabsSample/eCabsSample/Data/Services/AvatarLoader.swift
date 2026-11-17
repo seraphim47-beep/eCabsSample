@@ -3,7 +3,10 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
-//
+
+// **EN:** An actor dedicated to asynchronous avatar loading. It uses `URLSession`, an `NSCache` indexed by URL, and a table of in-flight tasks. This allows it to reuse previously loaded images and share a single request among concurrent calls for the same URL.
+
+// **IT:** È un actor dedicato al caricamento asincrono degli avatar. Utilizza `URLSession`, una `NSCache` indicizzata per URL e una tabella di task in corso. In questo modo può riutilizzare immagini già caricate e condividere una stessa richiesta tra chiamate concorrenti per lo stesso URL.
 
 import UIKit
 

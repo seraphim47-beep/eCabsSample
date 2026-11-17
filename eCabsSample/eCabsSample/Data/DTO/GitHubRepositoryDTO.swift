@@ -8,7 +8,6 @@
 
 // **IT:** Rappresenta il repository associato a un evento, includendo ID, nome e URL delle API GitHub.
 
-
 import Foundation
 
 struct GitHubRepositoryDTO: Decodable, Sendable {

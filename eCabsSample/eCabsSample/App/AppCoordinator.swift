@@ -5,8 +5,9 @@
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
 //
-//  IT: Gestisce la navigazione tra lista e dettaglio.
-//  EN: Handles navigation between the list and detail views.
+//  **IT:** Gestisce la navigazione tra lista e dettaglio.
+
+//  **EN:** Handles navigation between the list and detail views.
 //
 
 import UIKit

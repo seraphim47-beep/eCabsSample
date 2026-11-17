@@ -8,7 +8,6 @@
 
 // **IT:** Rappresenta i dati grezzi di un evento ricevuto dalle API GitHub, inclusi ID, tipologia, autore, repository, payload, visibilità e data di creazione.
 
-
 import Foundation
 
 struct GitHubEventDTO: Decodable, Sendable {

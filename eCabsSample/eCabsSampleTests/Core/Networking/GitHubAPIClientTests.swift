@@ -5,8 +5,6 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
@@ -17,6 +15,7 @@ final class GitHubAPIClientTests: XCTestCase {
         super.tearDown()
     }
 
+    /// Validates event decoding for an HTTP 200 response.
     @MainActor
     func testFetchEventsReturnsEventsOnHTTP200() async throws {
         URLProtocolMock.requestHandler = { request in
@@ -49,6 +48,7 @@ final class GitHubAPIClientTests: XCTestCase {
         XCTAssertEqual(result.pollInterval, 45)
     }
 
+    ///  Validates Not Modified response handling.
     @MainActor
     func testFetchEventsReturnsNotModifiedOnHTTP304() async throws {
         URLProtocolMock.requestHandler = { _ in
@@ -66,6 +66,7 @@ final class GitHubAPIClientTests: XCTestCase {
         XCTAssertEqual(result.pollInterval, 60)
     }
 
+    /// Ensures the ETag is sent in the`If-None-Match` header.
     func testFetchEventsSendsETagHeader() async throws {
         URLProtocolMock.requestHandler = { request in
             XCTAssertEqual(
@@ -81,6 +82,7 @@ final class GitHubAPIClientTests: XCTestCase {
         _ = try await sut.fetchEvents(etag: "etag-previous")
     }
 
+    /// Validates the default interval when the header is missing.
     @MainActor
     func testFetchEventsUsesDefaultPollIntervalWhenHeaderIsMissing() async throws {
         URLProtocolMock.requestHandler = { _ in
@@ -96,6 +98,7 @@ final class GitHubAPIClientTests: XCTestCase {
         XCTAssertEqual(result.pollInterval, 60)
     }
 
+    /// Validates the default interval when the received value is  invalid.
     @MainActor
     func testFetchEventsUsesDefaultPollIntervalWhenHeaderIsInvalid() async throws {
         URLProtocolMock.requestHandler = { _ in
@@ -112,6 +115,7 @@ final class GitHubAPIClientTests: XCTestCase {
         XCTAssertEqual(result.pollInterval, 60)
     }
 
+    /// Validates handling of undecodable JSON.
     func testFetchEventsThrowsDecodingErrorForInvalidJSON() async {
         URLProtocolMock.requestHandler = { _ in
             Self.response(
@@ -134,6 +138,7 @@ final class GitHubAPIClientTests: XCTestCase {
         }
     }
 
+    /// Validates HTTP error handling.
     func testFetchEventsThrowsHTTPError() async {
         URLProtocolMock.requestHandler = { _ in
             Self.response(statusCode: 500)
@@ -153,6 +158,7 @@ final class GitHubAPIClientTests: XCTestCase {
         }
     }
 
+    /// Validates HTTP 429 rate limit handling and the `Retry-After` header.
     func testFetchEventsHandlesRateLimit429() async {
         URLProtocolMock.requestHandler = { _ in
             Self.response(
@@ -182,6 +188,7 @@ final class GitHubAPIClientTests: XCTestCase {
         }
     }
 
+    /// Validates HTTP 403 rate limit handling using GhitHub reset  headers
     func testFetchEventsHandlesRateLimit403() async {
         let resetTimestamp = Date().addingTimeInterval(120).timeIntervalSince1970
 

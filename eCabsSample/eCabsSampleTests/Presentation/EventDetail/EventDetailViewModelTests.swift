@@ -5,13 +5,12 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
 final class EventDetailViewModelTests: XCTestCase {
 
+    /// Validates mapping of the event's general properties.
     func testInitializationMapsEventProperties() {
         let event = makeEvent(payload: .watch(WatchEventPayload(action: "started")))
         let sut = EventDetailViewModel(event: event)
@@ -25,6 +24,7 @@ final class EventDetailViewModelTests: XCTestCase {
         XCTAssertFalse(sut.isPublic.isEmpty)
     }
 
+    /// Validates extraction of a Watch Event action.
     func testWatchEventMapsAction() {
         let event = makeEvent(payload: .watch(WatchEventPayload(action: "started")))
         let sut = EventDetailViewModel(event: event)
@@ -34,6 +34,7 @@ final class EventDetailViewModelTests: XCTestCase {
         XCTAssertEqual(sut.sections.first?.items.first?.value, "started")
     }
 
+    ///  Validates extraction of the branch, Push ID, and commit identifiers.
     func testPushEventMapsBranchAndCommitInformation() {
         let payload = PushEventPayload(
             repositoryID: 123,
@@ -53,6 +54,7 @@ final class EventDetailViewModelTests: XCTestCase {
         XCTAssertTrue(values.contains("def456"))
     }
 
+    ///  Validates mapping of available fields from an unknown payload.
     func testUnknownPayloadMapsAvailableValues() {
         let payload = JSONValue.object([
             "action": .string("created"),
@@ -69,6 +71,7 @@ final class EventDetailViewModelTests: XCTestCase {
         XCTAssertTrue(values.contains("10"))
     }
 
+    /// Ensures an empty unknown payload does not   generate sections.
     func testEmptyPayloadReturnsNoSections() {
         let event = makeEvent(payload: .unknown(.object([:])))
         let sut = EventDetailViewModel(event: event)

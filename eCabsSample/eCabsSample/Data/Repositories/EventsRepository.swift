@@ -3,6 +3,7 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
+
 //  **EN:** Implements the events repository. It coordinates API requests, maps DTOs into domain models, maintains an in-memory event cache, handles ETag-based responses, and merges incoming events while removing duplicates.
 
 //  **IT:** Implementa il repository degli eventi. Coordina le richieste API, converte i DTO in modelli Domain, mantiene una cache degli eventi in memoria, gestisce le risposte basate su ETag e unisce gli eventi ricevuti eliminando i duplicati.

@@ -4,7 +4,10 @@
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
 //  Modello principale di un evento GitHub.
-//
+
+// **EN:** The application's main event model. It represents the event identifier, type, actor, repository, payload, visibility, and creation date.
+
+// **IT:** È il modello principale dell'applicazione. Rappresenta identificativo, tipologia, autore, repository, payload, visibilità e data di creazione dell'evento.
 
 import Foundation
 

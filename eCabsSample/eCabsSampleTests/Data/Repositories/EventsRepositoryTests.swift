@@ -5,13 +5,12 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
 final class EventsRepositoryTests: XCTestCase {
 
+    /// Ensures initial events are correctly fetched and stored.
     @MainActor
     func testFetchEventsStoresInitialEvents() async throws { // Prima risposta e cache
         let mock = MockGitHubAPIClient(responses: [
@@ -34,6 +33,7 @@ final class EventsRepositoryTests: XCTestCase {
         XCTAssertTrue(result.wasModified)
     }
 
+    /// Validates event merging and deduplication.
     @MainActor
     func testFetchEventsMergesNewEventsAndRemovesDuplicates() async throws { // Merge e aggiornamento duplicati
         let mock = MockGitHubAPIClient(responses: [
@@ -67,7 +67,7 @@ final class EventsRepositoryTests: XCTestCase {
         XCTAssertTrue(result.wasModified)
     }
 
-    
+    /// Ensures cached data is preserved when the server returns HTTP 304.
     @MainActor
     func testFetchEventsKeepsCacheWhenResponseIsNotModified() async throws {
         let mock = MockGitHubAPIClient(responses: [
@@ -103,7 +103,7 @@ final class EventsRepositoryTests: XCTestCase {
         XCTAssertEqual(secondEventIDs, firstEventIDs)
     }
 
-
+    /// Validates ETag updates and preservation.
     func testFetchEventsPreservesAndUpdatesETag() async throws { // Conservazione e aggiornamento ETag
         let mock = MockGitHubAPIClient(responses: [
             .success(
@@ -142,6 +142,7 @@ final class EventsRepositoryTests: XCTestCase {
         )
     }
 
+    /// Ensures API client errors are correctly propagated
     func testFetchEventsPropagatesAPIError() async { // Propagazione degli errori
         let mock = MockGitHubAPIClient(responses: [
             .failure(.networkError)

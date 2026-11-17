@@ -5,8 +5,6 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
@@ -19,6 +17,7 @@ final class GitHubTokenStoreTests: XCTestCase {
         )
     }
 
+    ///  Ensures reading returns `nil` when no token exists.
     func testReadReturnsNilWhenTokenDoesNotExist() async throws {
         let store = makeStore()
 
@@ -27,6 +26,7 @@ final class GitHubTokenStoreTests: XCTestCase {
         XCTAssertNil(token)
     }
 
+    ///  Validates saving and reading a token.
     func testSaveAndReadToken() async throws {
         let store = makeStore()
         let expectedToken = "ghp_test_token_123456"
@@ -39,6 +39,7 @@ final class GitHubTokenStoreTests: XCTestCase {
         try await store.delete()
     }
 
+    /// Ensures a new token replaces the previously stored token.
     func testSaveUpdatesExistingToken() async throws {
         let store = makeStore()
 
@@ -52,6 +53,7 @@ final class GitHubTokenStoreTests: XCTestCase {
         try await store.delete()
     }
 
+    /// Ensures the token is removed from the Keychain.
     func testDeleteRemovesToken() async throws {
         let store = makeStore()
 
@@ -63,6 +65,7 @@ final class GitHubTokenStoreTests: XCTestCase {
         XCTAssertNil(actualToken)
     }
 
+    /// Ensures repeated deletion does not throw an error
     func testDeleteDoesNotThrowWhenTokenDoesNotExist() async throws {
         let store = makeStore()
 

@@ -8,7 +8,6 @@
 
 // **IT:** Rappresenta l'utente GitHub associato a un evento, includendo ID, username, nome visualizzato e URL dell'immagine del profilo.
 
-
 import Foundation
 
 struct GitHubActorDTO: Decodable, Sendable {

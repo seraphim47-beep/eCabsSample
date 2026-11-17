@@ -3,14 +3,15 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
-//
 
-//
 //  EventCollectionViewCell.swift
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
-//
+
+//  **EN:** Define the collection view cell. The cell displays the avatar, login, repository, date, event type, and event description. It localizes descriptions and selected summary details, applies a color based on event type, and loads the avatar asynchronously. Checking the represented URL prevents a reused cell from displaying the result of a previous avatar request.
+
+//  **IT:** Definiscono la cella della collection view. La cella mostra avatar, login, repository, data, tipo e descrizione dell'evento. Traduce le descrizioni e alcune informazioni sintetiche tramite le stringhe localizzate, assegna un colore in base al tipo di evento e carica l'avatar in modo asincrono. Il controllo dell'URL rappresentato evita di applicare a una cella riutilizzata il risultato relativo a un avatar precedente.
 
 import UIKit
 

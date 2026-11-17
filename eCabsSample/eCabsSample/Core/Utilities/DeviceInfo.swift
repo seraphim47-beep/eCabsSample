@@ -8,7 +8,6 @@
 
 //  **EN:**  Fornisce un punto centralizzato per ottenere informazioni sul dispositivo corrente e sull'orientamento della sua interfaccia. Identifica la famiglia del dispositivo (iPhone, iPad, Mac, Apple TV o Apple Vision) ed espone proprietà per determinare se l'interfaccia si trova in modalità portrait o landscape. Fornisce inoltre descrizioni testuali del tipo di dispositivo e dell'orientamento corrente. Questa utility permette di centralizzare e riutilizzare la logica specifica del dispositivo all'interno dell'applicazione, in particolare per adattare l'interfaccia utente ai diversi dispositivi e orientamenti dello schermo.
 
-
 import UIKit
 
 enum DeviceInfo {
@@ -49,11 +48,7 @@ enum DeviceInfo {
             return .unknown
         }
 
-        if #available(iOS 26.0, *) {
-            return windowScene.effectiveGeometry.interfaceOrientation
-        } else {
-            return windowScene.interfaceOrientation
-        }
+        return windowScene.effectiveGeometry.interfaceOrientation // available iOS 26!
     }
 
     static var isPortrait: Bool {

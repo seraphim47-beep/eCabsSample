@@ -5,14 +5,13 @@
 //  Created by Matteo Savoldelli on 17/11/2026.
 //
 
-
-
 import XCTest
 @testable import eCabsSample
 
 @MainActor
 final class EventsViewModelTests: XCTestCase {
 
+    /// Ensures loading events correctly updates the ViewModel state.
     func testLoadEventsUpdatesViewModelState() async {
         let events = [
             makeEvent(id: "1", type: "PushEvent"),
@@ -41,6 +40,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertNotNil(sut.lastUpdatedAt)
     }
 
+    ///  Validates handling of a successful response containing no events.
     func testLoadEventsHandlesEmptyResponse() async {
         let repository = MockEventsRepository(responses: [
             .success(
@@ -62,6 +62,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertNil(sut.errorMessage)
     }
 
+    /// Ensures only events matching selected filters are displayed.
     func testUpdateFiltersReturnsOnlySelectedEventTypes() async {
         let events = [
             makeEvent(id: "1", type: "PushEvent"),
@@ -91,6 +92,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertTrue(sut.events.allSatisfy { $0.type == "PushEvent" })
     }
 
+    /// Ensures clearing filters restores all events.
     func testUpdateFiltersWithEmptySelectionReturnsAllEvents() async {
         let events = [
             makeEvent(id: "1", type: "PushEvent"),
@@ -117,6 +119,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertEqual(sut.events.count, 2)
     }
 
+    /// Validates network error handling.
     func testLoadEventsHandlesNetworkError() async {
         let repository = MockEventsRepository(responses: [
             .failure(.networkError)
@@ -131,6 +134,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertTrue(sut.events.isEmpty)
     }
 
+    /// Ensures the ViewModel exposes the available event types.
     func testLoadEventsUpdatesAvailableEventTypes() async {
         let events = [
             makeEvent(id: "1", type: "PushEvent"),
@@ -159,6 +163,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertTrue(sut.availableEventTypes.contains("WatchEvent"))
     }
     
+    ///  Validates rate limit handling when a reset date is available.
     func testLoadEventsHandlesRateLimitWithResetDate() async {
         let resetDate = Date().addingTimeInterval(120)
 
@@ -181,6 +186,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertLessThanOrEqual(sut.currentPollInterval, 120)
     }
     
+    /// Validates rate limit handling when no reset date is available.
     func testLoadEventsHandlesRateLimitWithoutResetDate() async {
         let repository = MockEventsRepository(responses: [
             .failure(.rateLimited(resetDate: nil))
@@ -199,6 +205,7 @@ final class EventsViewModelTests: XCTestCase {
         XCTAssertEqual(sut.currentPollInterval, 60)
     }
     
+    /// Ensures previously loaded events   remain available after a subsequent request fails.
     func testLoadEventsPreservesPreviouslyLoadedEventsAfterError() async {
         let events = [
             makeEvent(id: "1", type: "PushEvent"),

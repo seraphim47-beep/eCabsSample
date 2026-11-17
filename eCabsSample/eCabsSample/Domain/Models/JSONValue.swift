@@ -4,9 +4,9 @@
 //
 //  Created by Matteo Savoldelli on 15/11/2026.
 
-// **EN:** Provides a generic representation of JSON values, allowing the application to handle dynamic or unknown payload structures without requiring a dedicated model for every field.
+// **EN:** A recursive `Codable` and `Sendable` enum representing the fundamental JSON types: strings, integers, floating-point numbers, booleans, objects, arrays, and `null`. It allows dynamic data to be preserved without defining a rigid model for every field.
 
-// **IT:** Fornisce una rappresentazione generica dei valori JSON, permettendo all'applicazione di gestire strutture dinamiche o sconosciute senza dover creare un modello specifico per ogni campo.
+// **IT:** È un enum ricorsivo `Codable` e `Sendable` che rappresenta i tipi JSON fondamentali: stringhe, interi, numeri decimali, booleani, oggetti, array e `null`. Permette di conservare dati dinamici senza definire un modello rigido per ogni campo.
 
 import Foundation
 

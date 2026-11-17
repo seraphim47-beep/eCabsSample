@@ -5,6 +5,11 @@
 //  Created by Matteo Savoldelli on 13/11/2026.
 //  Gestisce lo stato della lista, il caricamento, il filtraggio e l'aggiornamento.
 //
+
+//  **EN:**
+
+//  **IT:**
+
 import Foundation
 
 @MainActor

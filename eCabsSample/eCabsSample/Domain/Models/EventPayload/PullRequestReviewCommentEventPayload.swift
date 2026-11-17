@@ -3,8 +3,6 @@
 //  eCabsSample
 //
 //  Created by Matteo Savoldelli on 16/11/2026.
-//
-
 
 import Foundation
 

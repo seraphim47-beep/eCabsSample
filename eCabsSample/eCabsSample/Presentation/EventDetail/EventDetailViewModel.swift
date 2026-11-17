@@ -4,8 +4,10 @@
 //
 //  Created by Matteo Savoldelli on 13/11/2026.
 //  Prepara i dati necessari alla visualizzazione del dettaglio.
-//
 
+//  **EN:** Transforms a `GitHubEvent` into the data required by the detail screen: actor, avatar, type, date, visibility, repository, and payload-specific information sections. It extracts available fields from typed payloads and generic JSON values, and validates URLs before exposing them as links.
+
+//  **IT:** Trasforma un `GitHubEvent` nei dati pronti per la schermata di dettaglio: autore, avatar, tipo, data, visibilità, repository e sezioni di informazioni specifiche del payload. Estrae i campi disponibili dai payload strutturati e dai valori JSON generici; valida gli URL prima di esporli come collegamenti.
 
 import Foundation
 
