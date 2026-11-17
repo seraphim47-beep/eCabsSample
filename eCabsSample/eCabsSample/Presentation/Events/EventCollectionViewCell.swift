@@ -64,25 +64,25 @@ final class EventCollectionViewCell: UICollectionViewCell {
         loginLabel.textColor = .label
         loginLabel.numberOfLines = 1
 
-        dateLabel.font = .systemFont(ofSize: 12)
+        dateLabel.font = .systemFont(ofSize: DeviceInfo.isPad ? 24 : 12)
         dateLabel.textColor = .secondaryLabel
         dateLabel.textAlignment = .right
         dateLabel.numberOfLines = 1
         
-        eventTypeLabel.font = .systemFont(ofSize: 11, weight: .semibold)
+        eventTypeLabel.font = .systemFont(ofSize: DeviceInfo.isPad ? 22 : 11, weight: .semibold)
         eventTypeLabel.textColor = .secondaryLabel
         eventTypeLabel.numberOfLines = 1
         
-        eventDetailLabel.font = .systemFont(ofSize: 12)
+        eventDetailLabel.font = .systemFont(ofSize: DeviceInfo.isPad ? 24 : 12)
         eventDetailLabel.textColor = .secondaryLabel
         eventDetailLabel.textAlignment = .right
         eventDetailLabel.numberOfLines = 1
 
-        descriptionLabel.font = .systemFont(ofSize: 14)
+        descriptionLabel.font = .systemFont(ofSize: DeviceInfo.isPad ? 24 : 12)
         descriptionLabel.textColor = .label
         descriptionLabel.numberOfLines = 0
 
-        repositoryLabel.font = .systemFont(ofSize: 12, weight: .medium)
+        repositoryLabel.font = .systemFont(ofSize: DeviceInfo.isPad ? 24 : 12, weight: .medium)
         repositoryLabel.textColor = .secondaryLabel
         repositoryLabel.numberOfLines = 1
 

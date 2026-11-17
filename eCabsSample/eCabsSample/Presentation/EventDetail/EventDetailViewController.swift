@@ -80,15 +80,15 @@ final class EventDetailViewController: UIViewController {
         loginLabel.adjustsFontForContentSizeCategory = true
 
         eventTypeLabel.font = .preferredFont(forTextStyle: .subheadline)
-        eventTypeLabel.textColor = .secondaryLabel
+        eventTypeLabel.textColor = UIColor(named: "mainLabelColor") ?? .secondaryLabel
         eventTypeLabel.adjustsFontForContentSizeCategory = true
 
         dateLabel.font = .preferredFont(forTextStyle: .footnote)
-        dateLabel.textColor = .secondaryLabel
+        dateLabel.textColor = UIColor(named: "mainLabelColor") ?? .secondaryLabel
         dateLabel.adjustsFontForContentSizeCategory = true
 
         visibilityLabel.font = .preferredFont(forTextStyle: .footnote)
-        visibilityLabel.textColor = .secondaryLabel
+        visibilityLabel.textColor = UIColor(named: "mainLabelColor") ?? .secondaryLabel
         visibilityLabel.adjustsFontForContentSizeCategory = true
 
         repositoryTitleLabel.font = .preferredFont(forTextStyle: .headline)
