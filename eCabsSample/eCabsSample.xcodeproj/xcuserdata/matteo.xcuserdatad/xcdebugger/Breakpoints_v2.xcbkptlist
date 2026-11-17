@@ -244,7 +244,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "765B8238-83D8-4C3D-82E5-25ACF7C36E22 - 7e70c178e9d76ce"
+                  uuid = "765B8238-83D8-4C3D-82E5-25ACF7C36E22 - 7e70c178e9d7688"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -254,11 +254,11 @@
                   urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "257"
-                  endingLineNumber = "257">
+                  startingLineNumber = "259"
+                  endingLineNumber = "259">
                </Location>
                <Location
-                  uuid = "765B8238-83D8-4C3D-82E5-25ACF7C36E22 - e70a15e8fac59ae7"
+                  uuid = "765B8238-83D8-4C3D-82E5-25ACF7C36E22 - e70a15e8fac59aa1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -268,8 +268,8 @@
                   urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "257"
-                  endingLineNumber = "257">
+                  startingLineNumber = "259"
+                  endingLineNumber = "259">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -774,7 +774,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A0EBD1C5-9C68-4617-B6FD-32900054B407"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eCabsSample/Core/Networking/GitHubAPIClient.swift"
