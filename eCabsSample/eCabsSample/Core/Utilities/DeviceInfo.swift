@@ -42,12 +42,18 @@ enum DeviceInfo {
     // MARK: - Interface Orientation
 
     static var interfaceOrientation: UIInterfaceOrientation {
-        UIApplication.shared.connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .first(where: {
-                $0.activationState == .foregroundActive
-            })?
-            .interfaceOrientation ?? .unknown
+        guard let windowScene = UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene })
+            .first(where: { $0.activationState == .foregroundActive })
+        else {
+            return .unknown
+        }
+
+        if #available(iOS 26.0, *) {
+            return windowScene.effectiveGeometry.interfaceOrientation
+        } else {
+            return windowScene.interfaceOrientation
+        }
     }
 
     static var isPortrait: Bool {

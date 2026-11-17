@@ -656,50 +656,6 @@
             endingLineNumber = "86"
             landmarkName = "startPolling()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0544D886-144C-4554-88B3-5563674F5801 - 59d06eb7b3021d60"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "eCabsSample.EventsViewModel.startPolling() -&gt; ()"
-                  moduleName = "eCabsSample.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86">
-               </Location>
-               <Location
-                  uuid = "0544D886-144C-4554-88B3-5563674F5801 - 3b96eaf4c16d4dfe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor @Sendable () async -&gt; Swift.Optional&lt;Swift.Int&gt; in eCabsSample.EventsViewModel.startPolling() -&gt; ()"
-                  moduleName = "eCabsSample.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86">
-               </Location>
-               <Location
-                  uuid = "0544D886-144C-4554-88B3-5563674F5801 - 658e10be60c168fd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Swift.MainActor @Sendable () async -&gt; Swift.Optional&lt;Swift.Int&gt; in eCabsSample.EventsViewModel.startPolling() -&gt; ()"
-                  moduleName = "eCabsSample.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -716,36 +672,6 @@
             endingLineNumber = "97"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "27C31A46-15D4-43F0-8983-4369238CC11D - cc64c4534af8d42f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in eCabsSample.EventsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "eCabsSample.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97">
-               </Location>
-               <Location
-                  uuid = "27C31A46-15D4-43F0-8983-4369238CC11D - cc14c67210ffd0d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in eCabsSample.EventsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "eCabsSample.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -985,6 +911,38 @@
             startingLineNumber = "123"
             endingLineNumber = "123"
             landmarkName = "rateLimitError(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0908FF9-5623-4C58-A4D2-B41072141C24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Presentation/Events/EventsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "refreshEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81B70299-48AE-4D61-9D97-3C97BF85ACAE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Presentation/Events/EventsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "loadEvents()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
