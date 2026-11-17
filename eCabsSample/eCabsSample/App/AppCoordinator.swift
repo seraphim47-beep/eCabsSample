@@ -31,10 +31,7 @@ final class AppCoordinator {
     func start() {
         let apiClient = GitHubAPIClient()
         let mergeEventsUseCase = MergeEventsUseCase()
-        let repository = EventsRepository(
-            apiClient: apiClient,
-            mergeEventsUseCase: mergeEventsUseCase
-        )
+        let repository = EventsRepository(apiClient: apiClient, mergeEventsUseCase: mergeEventsUseCase)
 
         let viewModel = EventsViewModel(repository: repository)
 
