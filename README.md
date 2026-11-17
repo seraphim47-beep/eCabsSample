@@ -32,6 +32,7 @@ The app follows a layered architecture, using MVVM for presentation and a Coordi
 - Includes an About screen with application and API information.
 - Support for iPad
 - Graphic optimization for iPad and landscape mode.
+- SUpport for dark and light theme
 
 ### Supported event types
 
@@ -153,7 +154,9 @@ e un Coordinator per la navigazione.
     GitHub.
 -   Localizzazione in italiano e inglese.
 -   Schermata About con informazioni sull'applicazione e sulle API.
+-   Supporto per iPad
 -   Ottimizzazione grafica per ipad e per modalità in lasdscape
+-   Supporto a tema chiaro e scuro
 
 ### Tipologie di evento supportate
 
