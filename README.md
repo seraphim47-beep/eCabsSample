@@ -32,7 +32,7 @@ The app follows a layered architecture, using MVVM for presentation and a Coordi
 - Includes an About screen with application and API information.
 - Support for iPad
 - Graphic optimization for iPad and landscape mode.
-- SUpport for dark and light theme
+- Support for dark and light theme
 
 ### Supported event types
 
