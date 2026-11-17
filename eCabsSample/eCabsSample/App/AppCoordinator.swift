@@ -18,7 +18,7 @@ final class AppCoordinator {
 
     private let window: UIWindow
     private var navigationController: UINavigationController?
-    private let avatarLoader = AvatarLoader()
+    private let avatarLoader = AvatarLoader() // handle avatar images and cache
 
     // MARK: - Initialization
 

@@ -120,17 +120,11 @@ struct GitHubAPIClient: Sendable {
     // MARK: - Rate Limit
 
     private func rateLimitError(from response: HTTPURLResponse) -> APIError {
-        let remaining = response.value(
-            forHTTPHeaderField: "X-RateLimit-Remaining"
-        )
+        let remaining = response.value(forHTTPHeaderField: "X-RateLimit-Remaining")
 
-        let resetTimestamp = response.value(
-            forHTTPHeaderField: "X-RateLimit-Reset"
-        ).flatMap(TimeInterval.init)
+        let resetTimestamp = response.value( forHTTPHeaderField: "X-RateLimit-Reset").flatMap(TimeInterval.init)
 
-        let retryAfter = response.value(
-            forHTTPHeaderField: "Retry-After"
-        ).flatMap(TimeInterval.init)
+        let retryAfter = response.value(forHTTPHeaderField: "Retry-After").flatMap(TimeInterval.init)
 
         if let retryAfter {
             return .rateLimited(

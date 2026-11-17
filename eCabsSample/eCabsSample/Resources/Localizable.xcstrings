@@ -1873,7 +1873,57 @@
           }
         }
       }
+    },
+    "error.rate_limit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub API rate limit exceeded. Please try again later."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limite di richieste GitHub raggiunto. Riprova più tardi."
+          }
+        }
+      }
+    },
+    "error.rate_limit_until": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub API rate limit exceeded. Try again after %@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limite di richieste GitHub raggiunto. Riprova dopo le %@."
+          }
+        }
+      }
+    },
+    "error.generic": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An unexpected error occurred."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si è verificato un errore imprevisto."
+          }
+        }
+      }
     }
+    
+    
   },
   "version" : "1.1"
 }

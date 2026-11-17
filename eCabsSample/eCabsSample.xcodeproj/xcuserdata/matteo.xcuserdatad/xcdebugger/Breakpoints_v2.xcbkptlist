@@ -592,6 +592,36 @@
             endingLineNumber = "90"
             landmarkName = "fetchEvents(etag:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF66F1C4-1D36-4DF5-96C3-1168CD45472A - 8c740cf6f921d0da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for eCabsSample.GitHubAPIClient.fetchEvents(etag: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; eCabsSample.GitHubAPIResponse"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Core/Networking/GitHubAPIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89">
+               </Location>
+               <Location
+                  uuid = "FF66F1C4-1D36-4DF5-96C3-1168CD45472A - 8c740cf6f921d0fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for eCabsSample.GitHubAPIClient.fetchEvents(etag: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; eCabsSample.GitHubAPIResponse"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Core/Networking/GitHubAPIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -608,6 +638,36 @@
             endingLineNumber = "101"
             landmarkName = "fetchEvents(etag:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7596A0F1-F698-48AB-B91E-2756462165FE - 8c740cf6f921d245"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for eCabsSample.GitHubAPIClient.fetchEvents(etag: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; eCabsSample.GitHubAPIResponse"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Core/Networking/GitHubAPIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100">
+               </Location>
+               <Location
+                  uuid = "7596A0F1-F698-48AB-B91E-2756462165FE - 8c740cf6f921d266"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for eCabsSample.GitHubAPIClient.fetchEvents(etag: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; eCabsSample.GitHubAPIResponse"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Core/Networking/GitHubAPIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -623,6 +683,174 @@
             startingLineNumber = "104"
             endingLineNumber = "104"
             landmarkName = "fetchEvents(etag:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7DEDDE5B-86B8-40C4-9168-484C828ADDC5 - 8c740cf6f921d2a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for eCabsSample.GitHubAPIClient.fetchEvents(etag: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; eCabsSample.GitHubAPIResponse"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Core/Networking/GitHubAPIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103">
+               </Location>
+               <Location
+                  uuid = "7DEDDE5B-86B8-40C4-9168-484C828ADDC5 - 8c740cf6f921d2c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for eCabsSample.GitHubAPIClient.fetchEvents(etag: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; eCabsSample.GitHubAPIResponse"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Core/Networking/GitHubAPIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8C994ED-E5BF-4BA5-A138-3D6948B86698"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/App/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0544D886-144C-4554-88B3-5563674F5801"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Presentation/Events/EventsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "startPolling()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0544D886-144C-4554-88B3-5563674F5801 - 59d06eb7b3021d60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eCabsSample.EventsViewModel.startPolling() -&gt; ()"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+               <Location
+                  uuid = "0544D886-144C-4554-88B3-5563674F5801 - 3b96eaf4c16d4dfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () async -&gt; Swift.Optional&lt;Swift.Int&gt; in eCabsSample.EventsViewModel.startPolling() -&gt; ()"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+               <Location
+                  uuid = "0544D886-144C-4554-88B3-5563674F5801 - 658e10be60c168fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Swift.MainActor @Sendable () async -&gt; Swift.Optional&lt;Swift.Int&gt; in eCabsSample.EventsViewModel.startPolling() -&gt; ()"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27C31A46-15D4-43F0-8983-4369238CC11D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Presentation/Events/EventsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27C31A46-15D4-43F0-8983-4369238CC11D - cc64c4534af8d42f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in eCabsSample.EventsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97">
+               </Location>
+               <Location
+                  uuid = "27C31A46-15D4-43F0-8983-4369238CC11D - cc14c67210ffd0d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in eCabsSample.EventsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "eCabsSample.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matteo/Desktop/ecabs_test/Project/eCabsSample/eCabsSample/Presentation/Events/EventsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6105AF8-697A-4E5D-AA84-30AD96C179E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eCabsSample/Presentation/Events/EventsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "loadEvents()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

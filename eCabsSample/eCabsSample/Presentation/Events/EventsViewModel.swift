@@ -94,33 +94,54 @@ final class EventsViewModel {
 
             allEvents = result.events
             currentPollInterval = result.pollInterval
+
             if result.wasModified {
                 lastUpdatedAt = Date()
             }
-            errorMessage = nil
 
+            errorMessage = nil
             applyFilters()
             onStateChange?()
 
             return result.pollInterval
 
         } catch let error as APIError {
-            errorMessage = error.localizedDescription
-            onStateChange?()
+            switch error {
+            case .rateLimited(let resetDate):
+                if let resetDate {
+                    let delay = max(1, Int(ceil(resetDate.timeIntervalSinceNow)))
+                    currentPollInterval = delay
 
-            if case .rateLimited(let resetDate) = error,
-               let resetDate {
-                let delay = max(1, Int(ceil(resetDate.timeIntervalSinceNow)))
-                currentPollInterval = delay
-                return delay
+                    let formattedDate = resetDate.formatted(
+                        date: .omitted,
+                        time: .shortened
+                    )
+
+                    errorMessage = String(
+                        format: String(localized: "error.rate_limit_until"),
+                        formattedDate
+                    )
+                    onStateChange?()
+                    return delay
+                }
+
+                errorMessage = String(localized: "error.rate_limit")
+                onStateChange?()
+                return currentPollInterval
+
+            case .networkError:
+                errorMessage = String(localized: "error.network")
+
+            default:
+                errorMessage = error.localizedDescription
             }
 
+            onStateChange?()
             return currentPollInterval
 
         } catch {
-            errorMessage = error.localizedDescription
+            errorMessage = String(localized: "error.generic")
             onStateChange?()
-
             return currentPollInterval
         }
     }
@@ -177,7 +198,7 @@ final class EventsViewModel {
             selectedTypes: selectedTypes
         )
     }
-    
+ 
 //    private func applyFilters() {
 //        let availableTypes = Set(allEvents.map(\.type))
 //
