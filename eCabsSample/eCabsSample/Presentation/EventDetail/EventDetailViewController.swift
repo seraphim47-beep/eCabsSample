@@ -70,7 +70,7 @@ final class EventDetailViewController: UIViewController {
     }
 
     private func setupUI() {
-        avatarImageView.layer.cornerRadius = 28
+        avatarImageView.layer.cornerRadius = DeviceInfo.isPad ? 56 : 28 // fixed 28 on ipad get square with round corner not a circle
         avatarImageView.clipsToBounds = true
         avatarImageView.contentMode = .scaleAspectFill
         avatarImageView.backgroundColor = .secondarySystemBackground

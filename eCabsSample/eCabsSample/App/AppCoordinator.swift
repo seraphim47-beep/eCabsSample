@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 @MainActor
 final class AppCoordinator {
@@ -20,7 +21,8 @@ final class AppCoordinator {
     private let window: UIWindow
     private var navigationController: UINavigationController?
     private let avatarLoader = AvatarLoader() // handle avatar images and cache
-
+    private var SUI = true
+    
     // MARK: - Initialization
 
     init(window: UIWindow) {
@@ -61,11 +63,27 @@ final class AppCoordinator {
 
     // Oper about page
     private func showAbout() {
-        let aboutViewController = AboutViewController()
-        navigationController?.pushViewController(
-            aboutViewController,
-            animated: true
-        )
+        if SUI
+        {
+            let aboutView = AboutView()
+
+            let aboutViewController = UIHostingController(
+                rootView: aboutView
+            )
+
+            navigationController?.pushViewController(
+                aboutViewController,
+                animated: true
+            )
+        }
+        else
+        {
+            let aboutViewController = AboutViewController()
+            navigationController?.pushViewController(
+                aboutViewController,
+                animated: true
+            )
+        }
     }
 
     // Open eventdetail page
